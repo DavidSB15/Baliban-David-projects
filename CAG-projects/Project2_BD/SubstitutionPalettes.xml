@@ -1,0 +1,798 @@
+﻿<ProcessPower Version="2.0">
+   <BaseClass name="Blowers">
+      <Class name="BlowerGeneral" GraphicalStyleName="ISO Blower (Fan) - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVFhHxY4BEoMwCAT9/6etZEoklwu5WKud2RaOhWbb9/1VaPgkNMw4PvZFQVeBhgzlTxQHoWHk0tGFHRo6K4cQdZeGhi9nR5RZ5hg8VJfFeeb1QZDTReW4cKsPhCXDZ4qDdaRtQBotGT5TnFFfsqYJApMjPlc9rGtWCxgyOeJz1Rv2tZiIiM9Vb9jXYiIyrjhdX4swQAmxOYJOJM7RPYtEciz3Gfv1Gok5OmeRSUc/m8d6Nve69LUYSLFmvZN5o7r0TXO0nfDN2AzJXJaVvGkG0h2MbjdNCf74AMyMPnj7ASW8+RHZPRoadz1idoeGzq+PUPZpGLEjqw9Z2aEhQzmqOAgNM/xPGOgq0PBJaPgkNHyOffsAgvzNv4ksr84AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BlowerRadial" GraphicalStyleName="ISO Blower (Fan) - Radial">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVFhHxY4BEsMgCAT7/0/b4BSD54lnJk06sy0sB/VTSnkVKp+EyozjY18UzCpQyVD+RMkgVEYuHd3YodLZOYSou1QavpwdUWZZxuBSXRbnWW4UIZwuKseFW6MQlgyfKRmsI30DodmS4TMlM+ur65oQYOGIz9Uc1s21AoYsHPG5mpv2rVgEEZ+ruWnfikWQcSUz9K0IAwwhNkcwE4lzzJ5FEnLM+4z9eo1Ej5mzyEJHv5rHejX3uvatmIRizXony83q2nfN0Q6Bn2MzJMsyV33XTEJ3MLvdNVX88QHojFG8/YAqb35Edo9Kgy2ZW8F20EWodFbLK5R9KiN2ZPchOztUMpSjSgahMsP/hIFZBSqfhMonofI5yucLfUa70QejXaQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BlowerAxial" GraphicalStyleName="ISO Blower (Fan) - Axial">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEZSURBVFhHxY4BksIwDAP5/6dLncGpo8iOWkq5mT1saWN4bdv2V2j4JDSs2P/sHwVdBRoylC9RHISGkUtHT7yhoXPmEKK+paHhj6sjSlc5Bg/Vx2JfeXMQ5PKhcly4NQfCI8M7xcE5Mi4gZY8M7xQn21s2LEFgcsR71cO5Z32AkskR71Uv3fuwEBHvVS/d+7AQGVecae9DKFBCrEfQicQe3WMoJMdy79inz0jM0TmGStr3VR/nVe9z2/uQSHFmu1N52dz2YdnXSfhkWYd7hHUxa/mwJFLGWZf5w9KCH/4AzIw5+PcPaKF4+A6PhoZy/A6Hhs7y8Ze9QcOIHVEORc68oSFDOao4CA0r/EsY6CrQ8Elo+CQ0fI7t9QaMRb/NXsrlkwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Compressors">
+      <Class name="DiaphragmCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Diaphragm">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVFhH7Y5RDsMgDEN7/0szghQ1NS4Y2sHHVulV4NgmR0ppK1RcCRVb5M9+FPQqUJGhPKJ4ECpGpkoHMlR0RooQNUtFw8NKCUPNc/Hh447SUwvB3AoqKF21sHMBNN2FVJS+6yUYmHmGXud5gCEzz9DrvR/89AJoekqr+zz8F9i9QLnkKxre4q77etm9QBG+uABqRi1kKYLzEZSuSihiMHsY8bniiWeEikYrZNjcwVmkO2ei0wv3UPJUjFjJ6CIjGSoylFLFg1CxhT/CQK8CFVdCxZVQcR3p+ADqKfuRcugd7wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="EjectorCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Ejector (Jet)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEBSURBVFhHxY6BjsMwCEP7/z+dNZWSEWOI2aT0pHeCF+zuaq29CpUnoTLj/uv/KHirQCVD+Yhyg1Bp+am0kKFyUClC1CyVnRFWShhqnss/Pz5Qerwwx1lQQeny4s0fgEdRSEXpWxdz0GcWqIAdrO87wGPfWaAC63D7HIJD9CpR3u1zCA7Rq0R5t8/BPERzhajDzs8+h+wI9h1Z3r3NITuCfUeWd29zyI5g35Hl3duy3CseDI8uI+qgflmiI+Iyog7qnQjC6DIqHV68/QMeCcdROKKSp7IzQlk4Q81TOejhXUGEmqXSohZZKhkqGUqpcoNQmTE+wsBbBSpPQuVJqDxHuz5Ah+mjqZQm9gAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVFhH7Y5bDoQgEAS9/6VZISHiUEDzWPjYNSkjZU8zl3PuKCh3grLG/fgXYrMKKAnlEiVjQZkyVNoxgzLSU2RRZ1F64rBSQqjzLCcvjyg9uUjCtUEFpSsXJxewodKQitL3PiQBCo/Q6nw+zE8Kj9DqLf/46QVsaJZa9/PxX+D0AuFwH21gFaXu9+H0AkF8cQHrPLk4vUCQi5eo9aH0rFqi1YMyMruEMo8yxZf0LtIzg5JQSpWMBWWNeAlhswood4JyJyj34a4Pu2QldrNUiLYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="LiquidRingCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Liquid Ring">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAELSURBVFhHxY4BDoMwDAP5/6cZRTIE12mdgWDSTcnFCV3Wdf0UKd9EyhHbr/1JOOsgpcL5iJNhpIz8dbSwIyWoHGLcXSkbWHaOKNx9LW9+HDh3ehHCo0UH51YvCg+ozLPstaFQtgSqc5W/NiGgwqDNGM6AOFO5s6Bh1rMH2XzaH8UkmLmIs9P1RzEJZi7i7HT9UYQBh0DmgbPHmbMYhEDmgbPHmbMYhEDmgbPHmbMYhKJTs8ZoHh3Pj2JvtpYDCuQinGGy3LUxj4FqVuUvzS4KRytkd3vx9QN2+fAjRvekbDz1iNkdKcHdRzj7UkbakepDKjtSKpyjToaRcgQ+ouCsg5RvIuWbSPke6/IDQ1DnpRtRMSUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PositiveDisplacementCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Positive Displacement">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD3SURBVFhH5Y5RDsMgDEN7/0uzplJG6prEMIl+bNKb4MVOOVprr0LlTqjMOH/2R8GsApUM5SNKBqEysrR0okOlM7MIUbtUGl5WljDUPpc/ftxR9jxFCGdFBWXXU7z5AAyNSirKvvslBFh4hWpnP8CQhVeo9o4Hf/0ADDnmK7BjRI+ZfkhCzsg7Sg8z/ZCEnJF3lB5m+iEJOSPvKD3MfA/X5bxiIJLNjKrL5vfLIORkM6PqsvntcoliCbrISvcp3n7AJUfhxQdkPSoNVjJXwTroIlQ6VblC6VMZsSWzD5npUMlQlioZhMoM/wgDswpU7oTKnVC5j3Z8ACF84au+/SqmAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ReciprocatingCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Reciprocating">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD0SURBVFhHxY4BDsMgDAP7/0+zUilAjQkO7eikmxJzSXOklD6Fhjuhocf5y38UdBVoyFA+ojgIDVuWlgZmaGhEFiHqLA0zNqwsYajzPHz4cUPZ0weN7A0qKLv6IHBA5H3k3huQRkNG9J3596YRmIxEHebXAh6ZjKw4XV+KichYcbq+FBORseJ0fSmaB5RGrHg4UwtHGrHi4UwtHMnIuQf6RvuGXi0c6Sne7lJczdmi8Baj3ffm6wOu4I8HYJbpg68PuMKXj/D20TDz1hGzPTQ0nh6hzNOwJS+JHhKZoSFDWao4CA097CMMdBVouBMa7oSG+0jHDxJJBZbWZZwLAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RollerVaneCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Roller Vane">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADbSURBVFhH5Y5bDsMgDARz/0vTGMmJYxazPEo+UmkqPKw3HCmlV4FyJ1BGnD/5g/gsA5QI5iNMxgOlZai0YwdKpafIw+5CKegyU4Jg97Gc/LjC9JTChKNFBqarFG8+wIdqSyxM33MwARQeodV5H9wlCo/Q6q1ffPoBcraoZ/H7gr3Tc56vQxCaJeq+D59/QB7O0QdWUet+Dm8/IIs/PsA7oRQdD1iRLUSWZPGKHJQCU74iA6XSXJ68F6C0SEmtKPK1Ow+UCFSKZu9aQBmhH0H4LAOUO4FyJ1DuIx0/awgLkMmGK24AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="RotaryCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Rotary">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVFhHxY6BDsMgCET3/z/tiokWzwORdm7JW+B4UD+llL9Cw5PQ0OP6yR8F3Qg0ZEQ+EnEQGmpSRzd2aNjYOYREd2kotOXIEUZ0n4cPP96I3JkDJXuLESK35mCxJJkFc1mtGRuQft3XbGiUwGSEOZjpHmc164WzaJFxpr4XC5GRcaa+FwuRkXGmvhdqgJJFxsOdu3Aki4yHO3fhSBYZD3fuwpEsMh7u9KI2V4tCg+WWyxCX3hgaQ2rgbNVrZMbmQ1MD54jQDjHQ1VjzOVgcyhJ+QA1ffoR3j4bCW49Y3aFh4+kjIvs01MiR3Yfs7NCQETkacRAaerSPMNCNQMOT0PAkNDxH+XwBSZ7npVVoq38AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ScrewCompressor" GraphicalStyleName="ISO Compressor - Screw">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVFhHxY4BDsQgCAT7/0971URL1wWXtvEumQssA/UopfwVGu6EhhHnr/5R0FWgIUP5iOIgNLQ8OprYoWEncwhRd2lY6cvKEYa6z8OXH+8od+bAyNGignJrDhIPyMw9996A5C1V+kxxvL5lt8YITO7gTHWZdxXi0bf51I9iIXqZRdmZ+lGsROg9VntTPwozQMnjiYc7VxFIjO5kXKxbP4pAQnCe8dG9ikCyeDN1B71RtOZsUbBEs8pql83vjSNVvByJ9tns1rSASc5Rj8yNOUh+TEV+QAs/fkR0j4aVrx6xukPDzttHKPs0tNQj2YdkdmjIUI4qDkLDiP4RBroKNNwJDXdCw32U4wd6IPWXLFsnPwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TurboCompressor" GraphicalStyleName="ISO Compressor (Vacuum Pump) - Turbo">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEHSURBVFhHxY4BDsMgDAP7/0+zgkQEjnFCW7FJN8WOnXKVUv4KNU9CTcX9q38UzGagJiPzkUwGoebIo6MbHWp2dg4h2S41K72cOcLI9rn58uOdzB1vDGFVzJC55Y2gVL0VLMvmkVlAKNJIlEfdvEkMAQyjXqF6uGueDZtFheo6bYMI4i5CdZ22QQRxF6G6TtuwUYpQfbezQYVAR6i+29mgQqAjVN/tbFAh0BGq73aTuCUGOisfUX22m8Ui1FG7StRl+0k0I/GRFZgdWe29ERx6SvoBzfz4EeoeNStfPSK6Q83O20dk+tQcqUd2H7LToSYjczSTQaip6B9hYDYDNU9CzZNQ8xzl+gFQCd2v/+NBmAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Conveyors">
+      <Class name="BeltConveyor" GraphicalStyleName="ISO Conveyor - Belt">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVFhHxc1RCoAgEADR7n9pk0hTGcMNmT4e5LitR0rpVxhNGE0YTRhNGE0YTRhNGE0YTRhNGE0cc95tfKPoD83w208R7T7a+XzQJbSIlZ3Ti1mLWNk5vZi1iJWd9eM65GMZGAe/avfRzu5Q4z280/hGgdGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGTjhOrfXEqcq/EMwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="BucketConveyor" GraphicalStyleName="ISO Conveyor - Bucket">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVFhH7Y5RCoQwDAW9/6W7m4VAeMxLq0L9WIWxOJZMjjHGo6DcCcoVvk+8fui/M6CcodE7S6Cc8egCLnZ1CZQdEdJYOvUroOzISAbrdz1XQdnhAtW7OwTKDjdcvbunoOxwg8MTek9B2eGGrsQIlB3vAu8C7wL/tUAMJfRe4PwMlBUd7ELOz0Cp1OEu5PwMlEQG6plUfxaUjgxqjNwqKDtcaNsCgcauxgOUMx5fIIhoov/OgHInKHeCch/j+AD1yE1O9NjgIQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ChainConveyor" GraphicalStyleName="ISO Conveyor - Chain">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVFhHxc5RCoAgEABR739pC4nactJKmT4e5KwupZzzrzCaMJowmjCaMJowmjCaMJowmjCaMJo4rvlq5jyqQ+fBF62d50O4dPfgrd7O44OGgz/xZOf+UQ5heL34VW/n6VDCmujiiNbOKpS4PYhmziOMJowmjCaMJowmjCaMJowmjCaMJowmjCaMnpwWMJORCtnIKzsAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralConveyor" GraphicalStyleName="ISO Conveyor - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVFhHxc5LDoAgDABR739pFCNKmqkfEsbFS3CqxaWU8iuMJowmjCaMJowmjCaMJowmjCaMpuuwHS3tzv3e8xAGs0z7gbffx/fSwYi642lPnOeDY9moflcvztLBiLrjaU+cp4Ov3n4f30sHs9z+gKXdud/bP/wBowmjCaMJowmjCaMJowmjCaMJowmjpywrY+tBWqCu9TAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ScrewConveyor" GraphicalStyleName="ISO Conveyor - Screw">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVFhHxc5BCoAwDABB///pagvRGjb2outhoG4CcWut/QqjCaMJowmjCaMJowmjCaMJowmj6XocT0vcHHfPRxp85ZUfWO32ebWTezmoxF61P3faye02sMTNcfd8pEFuNO+iV/Ms75WD0Hs1C6v5LO+Wg688/oAlbo6788cfMJowmjCaMJowmjCaMJowmjCaMJowetq2A0aNH3xDxcJGAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="VibratingConveyor" GraphicalStyleName="ISO Conveyor - Vibrating">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVFhH7c7RCoUgEEXR/v+nLYUpiT06WJ188GGB7Qv3zJZS+hVGJYxKGJUwKmFUuh7HU8U2y+75uP3wlXXAOmAdMPcBKrZZduuPCPwTaFEYPb2RkSMweqY7oPcdgdFTD9AYtR6MHhvwhrzegrHlzfEMY08es8H6PQJj1JNhg1EJoxJGJYxKGJUwKmHUSdsOF4E5YoqoWy4AAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Crushers">
+      <Class name="ConeCrusher" GraphicalStyleName="ISO Crusher - Cone">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADOSURBVFhH1Y5bDsIwDAR7/0sHHJHK2U4eiGqBj5G6Y6+bo5TyVVA6QekEpROUTlA6QemkD8/ooPvn+SGDkXuHnZvnRw06vPkBdK8P//KA8IruBOpprwtVpCUsgAtWuzQPrmJRIhesdmkeXMWkpFmZ7euscRFVvpa1pFkZ7avPsBwUNSujffUZllDM3zOok52CMohSLs6OZLSz6qEMtNzyDtppmUAZ7JRX7NxA2bjjAeoUlI2feMCn6E0FpROUTlA6QekEpROUTlA6QemjHA9JcPOZa2QhwAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralCrusher" GraphicalStyleName="ISO Crusher - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHzY7RCsMwDAP7/z+dzYGURrnMHitaHw7is+T2aK39FZROUDpB6QSlE5ROUDqZh/foYPrm+ZDFzn1D5eb56IMub/4BujcPT/8BnZUsr3N3i7iEsAAuyLK0D1ZRKYmv5LaZRRRKwdhVMvq+soguC8eD6v5TjmWleFcGZVJUn+V2+wBlECUq7o7tsrv8AGVA5fQY5NMOyUDL2aGBdrIeykFWzqj0UQ4e8QO/ojcVlE5QOkHpBKUTlE5QOkHpBKWPdrwAxiwJkkXu2u0AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralCrushingMachine" GraphicalStyleName="ISO Crushing Machine - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhHzY5BDsMgDATz/0/TGslRMZMaSNnmMFI8eDc+Sil/BaUSlEpQKkGpBKUSlEra4T0qaP55foSHXVweUIfNR1B/Ozz9gB3vzVDF4k+Wc51Iioy4s5JxejFQZvje7H6kE1XeLI1822M5UOw7M7sEy6Q0vs/uf4LSuAr9yjsoDQqmZSsZkkYMZkXObA6lk4UzRvIonUcccJfYGUGpBKUSlEpQKkGpBKUSlEpQ6ijHC1m+PV4R8BsYAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralMill" GraphicalStyleName="ISO Mill - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC9SURBVFhHzY5bDsMgDARz/0vTGMlRcIaaR7XNx0h48C4cpZS/glIJSiUolaBUglIJSiXtcI4KmjevQ7jouRlGOq9DHW6XcXGVrLMd3vIBWjR63slydN8MVWw+0qObe4ikyIg7KxnnKQbKDN+b3Y88RJWbpZFveywHin1nZpdgmZTG+9n9OyiNXuhX3kFpUDAtW8mQNGIwK3JmcyidLJwxkkfpvOIDu8TOCEolKJWgVIJSCUolKJWgVIJSRzk+aPctbuj7pHwAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="HammerCrusher" GraphicalStyleName="ISO Crusher - Hammer">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADMSURBVFhH1Y5BDoMwDAT5/6fTGinIWSbBqGjbHkbE47Xx1lr7KiidoHSC0glKJyidoHQyFu/SwfDP4yGNmbtDZefx2AttPnwA7RuLfzxgldEeZYdiFylEA4H6Sm6aOYmLoXDqyXVP78xZLIaol52Se7PcSeyysDyo9lc5lpPBXPd3dkopg3IxGE49ue7zl0AZxNBsUP0qN+t1UAaV4WCVqexAGVSGr6jsQNl54gB1CsrOTxzwKbpTQekEpROUTlA6QekEpROUTlD6aNsLWzsFljFQHL8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="HammerMill" GraphicalStyleName="ISO Mill - Hammer">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADDSURBVFhHzY5bDsUgCAW7/017axMbxMFHTc/txyQwHJEjpfRXUCpBqQSlEpRKUCpBqaRuzlZB9edduEHkVpjZeRdXY4Y++JTRzrr5ygEUjJjJlgxlq+YSCwujnogyrRgsy3OfIeeJ5q3oLLKzUlvXI8o14pKbSz29HMvggfWlti6il2HZe3DO/JycpTsjmVlZuJL1oMyMHhaGH7x9wIjHB2R2j5h5j7LwiQN28Ts9KJWgVIJSCUolKJWgVIJSCUod6fgB/fcpckY5Wv4AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ImpactCrusher" GraphicalStyleName="ISO Crusher - Impact">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVFhHzY7RDsIwDAP5/58uy0SmzLuSIpDZw0nJxe72GGP8FZROUDpB6QSlE5ROUDo5L9vq4PTNY5DDzH3CypvHsC96/PEP0Hvn5e4/oLvS5XXf3UWUEBYm9zqTo3twFSulzeetzkr108xFrJTEr+SmGZSvMJXIBe+ydEtYNkX1XW52D1g2xfA1k7NSM+kUlEGUqFjdbK6OfAVlQOX2Mci3HZKBlruHEu10PZRJV+5Y6aNMbvED36JvKiidoHSC0glKJyidoHSC0glKH+PxBJv4+5F6Z+VlAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ImpactMill" GraphicalStyleName="ISO Mill - Impact">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVFhHzY5BDsMwCATz/0+7JSoRJoPtuNK2h5FgzG5ytNZ+CkolKJWgVIJSCUolKJX0y3tV0H3zGtJD5Z6w0nkN5xIe8+Eus85+GRznfZWYo45++RzQoVF5Z5aj9245xYOPVDNRvd/FpMiwG7+L84jq5i42ynYyzk2cclBYFm1kDJaDgJHfn95HWC4U+k2cK0bvKI0qFH01RyrvoDQoOC3byZA0cnBWVDHLoXR2P+qs5FE6f/ED35I7MyiVoFSCUglKJSiVoFSCUglKHe14AeSCH3yfpTNgAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="JawCrusher" GraphicalStyleName="ISO Crusher - Jaw Crusher">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVFhH5Y7RDoNACAT9/5++FlPMinNKU7Nt0oeJMLB4yxjjq6B0gtIJSiconaB0gtLJvnm2Dnb/3IoymLl36NzcirWpw5sfQPf2zd8/YBWyRAEi9mhXHc2Do2iElLP9s1lyFI1QQnN1s1o5iFW+luN7RWYSdVmrq7BsBAOaq8taXYVlI5joTt3PvnoFZRChs6Ay2515BWXQCV/RuYEy6ISv6NxAmdzxgOoqKJOfeMCn1JsVlE5QOkHpBKUTlE5QOkHpBKWPsTwAwtMFll7i2+0AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="JetMill" GraphicalStyleName="ISO Mill - Jet">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADdSURBVFhHzY7RDoNACAT9/5++FtM1HA4ntg3tw0R3FtBtjPFTUHaCshOUnaDsBGUnKDuZwzN2MH3zeAlF5u5QuXm87MGVcfBdrm7OofgD1kXijPAdzc3hNUCDIusqOzQzhV0UDvkslNVFsu4sskH3EaHOc9ufxOJA1nlW+9EZJ7FLGDZXhXajEyyTI6tDItuNTrBcHLGnUOchn80aKI3KIctCWZ0g50FpZIvf8gKlsVq0LhJnxKozUIqr5Ssq+yjFX/zAp8SbEZSdoOwEZScoO0HZCcpOUHaCso+xPQDkue2fH3Ke/QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RollerCrusher" GraphicalStyleName="ISO Crusher - Roller">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVFhH5Y7RDoMwDAP5/5/uKFpQaq4QNORN2sNJzhWHLK21r4LSCUonKJ2gdILSCUon47CODoZ/7kEeZu4OlZ172AZ9fPgA2jcOf3/AJtJHWFidenLhKWeO4qREb+Ro1rfgKCalnKtuljMHscn3x7mUc9VFzk5hCcWcqy5ydgrLSTHPkcnprD6DstNLVCRP7sxnUHYq5SsqO1B2KuUrKjtQBk8coE5BGfzEAZ+iOxWUTlA6QekEpROUTlA6QekEpY+2vAApzf2PdFu3dAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RollerMill" GraphicalStyleName="ISO Mill - Roller">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVFhH1Y5ZDoMwDAW5/6VTjGSUmHESSPVKP0ayx+tWSvkpKJWgVIJSCUolKJWgVNIme6qguXkGoZC5O8zsPIMjqYqx8SmjnW3ylgeocYXe3iY5xOC41WMPuUhWv4rOorrmMTkiq11F1gh+1hmpR7lwbNY5LL98jJzDMhmovcfkIpk3UBq9ZbFGzsm8g9IYDc7yvw8Yq0/MzKN0XvHAKnFnBKUSlEpQKkGpBKUSlEpQKkGpo2wfzIkhen5cB3EAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="VibrationMill" GraphicalStyleName="ISO Mill - Vibration">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADRSURBVFhHzY5REsMgCAVz/0vbkikZJYuStPPSjx1leaBba+1RUCpBqQSlEpRKUCpBqWQs3qWC4c3jEhqZu0Jl53HZi64Zg3dZ7RyL4gesF4kZp+9Rbiw+AQo6Wa8yQ5mh2EVhUcad2bPIgovHnavzZ/H0B3YJ4V87h2VhidU9vff7zDksC0uszuhzno3OQWnMFtmZ4VmHXA9KIxs0nxGzRuYdlMZs0HqRmHFmPQOlsxpeUZlH6fzFB74l7oygVIJSCUolKJWgVIJSCUolKHW07QWU/e+dmDHzKwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Driers">
+      <Class name="DiskMovingShelfTurboDrier" GraphicalStyleName="ISO Drier - Disk (Moving Shelf) Turbo">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhH7c5RCsUgDAXR7n/TtvdDCGE0bQ2WQh6c9zEm1qO19imMO2H0rp/+HvF3jGC0Zpe9PbMwWm8/MjuzMHbRJavngrFb/UB0Lhjl1nLCDEbJuFyiGYxCi2oR2vHNwijRomTMYBQtjtiZaFb6PMEo0aJkzGAUWlSb8fMy6h1GiRbvqgfUA+oB9YB6QD3g3w/I4u+2MO6EcSeM+7TjBGtpA5gBYvrOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FluidizedBedDrier" GraphicalStyleName="ISO Drier - Fluidized Bed">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVFhH7c5RCsAwCAPQ3v/Sbn4IIhnatdgNMnj7CJhmiMhRMOwEw+j+9DcldjyBoTdT5lXvYOgdHfD2cVO5h6E5OmD1cZP1wFB9YsAusduDocoOqziAA5YG7BK7PRiq7LCKAziAAziAA/49YJfY7cGwEww7wbCPjAvScw2OHMPtvgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralDrier" GraphicalStyleName="ISO Drier - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABmSURBVFhH7Y7BCsAwCMX6/z/t5qEg8sbareglhfQQUDPMrBUpK5Eycz//tsg7npAysrMssjonZaQ14Ovxycq8lJPWgL/HJ297pHQIIIAAAggggAACCCDAB0+Rd0ekrETKSqSsw8YFeGxRSstfOeQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="OvenShelfDrier" GraphicalStyleName="ISO Drier - Oven (Shelf)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVFhH7c7RCsQwCETR/v9P286DIDKppg2mBRfOPlzW7BwishWNlWj0rg++pvg3Rmi0Zh6zsnc0WlsHPP1zlbmnUW0d8PbPVfQOjfDJAWgRduObRSNEh1lLB6BF2I1vFo0QHWYtHYB2x/8eRl3RCNFhVg/oAT2gB/SAHvDvAav4ty0aK9FYicY6cpxw6h1+ogtBRgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RollerConveyoryDrier" GraphicalStyleName="ISO Drier - Roller Conveyor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVFhH7c7RCoQwDERR//+nq3kIDOGWtlZSH7JwljiYOFdr7SgMM2EYPT/7WxJv9GCoVo6p2T0M1dECbz/uZvYxdEcL7H7cje5gaH5XwJ5nxT19jjA0uuizZoTe05lgaHpHdFa9d3QmGJp4ZJXu+kwwNKPFWVWgClSBKlAFqkAV2CrwlXhbYZgJw0wY5mnXDdoXEYpsjjJUAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RotaryDrumDrier" GraphicalStyleName="ISO Drier - Rotary Drum">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVFhH7Y4BCoQwDAT9/6d7LlwghGlTi1SUCCMycZM9WmuPgnInKCPno9cl4o4eKD1Xlnlmcyg9jxZYPW7M5FEaowWaZQeyuUApRmHNbO6/idFMoBS94F3eQCkomC5byZAUS8uqwOcLCPk4I2f0vIFSpMH/0Zn/ovOgFFlwlipQBapAFagC7y5wF3G3B+VOUO4E5T7a8QMfDx98gDe7QQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SprayDrier" GraphicalStyleName="ISO Drier - Spray">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB3SURBVFhH7Y5LCoBADMXm/peudlEoJfMDqZsnRCXqM8PMfgVlJygr7+GnK+rGDJSZ2Vj8aPW8OgJlhobC1WuGHIEy2A3P7leugjKoA7vB2/cdlM7JxyfsdlA6ClCAAhSgAAUoQAEKUIB/+BV1O4OyE5SdoOzDxgNx+jtgTsZm/wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Filters">
+      <Class name="ActivatedCarbonFilter" GraphicalStyleName="ISO Filter - Activated Carbon">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVFhH7c5BCsMwFAPR3v/SbrMYEEYOGQIuhBReF5OP8GeM8Vc17lQjfr/j75Z5c1YjrgyceR/wjAdg1bH6Rl+pEW1gNWpuU40wo+Y21Qgzam5TjTCj5jbVCDNqblONMKPmNtUIM2puU40wo+Y21Qgzam5TjTCj5jbVCDNqblONMKPmNtUIM2puU40wo+Y21Qgzam5TjTgGsOpYfaOv1IgrA2feBzzjAXfNm7Mad6pxpxr3GZ8vhbXpox3DFkYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BeltFilterForFluids" GraphicalStyleName="ISO Filter - Belt Filter For Fluids">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVFhH7Y7bDsAgCEP3/z/NdBmukmrwEvfCkrNAgdpLRH6FiiehopK+/FvCelqoqHgMekSACBABIsB0gHy4G/uGUjewjPUs6IE18hVsSLQRPJ7NQUsbwePZHLS0ETyepXia1OoC1rOgB9ZI1RTxXd6JfUOhotI79OC5p6ISASJABIgA2WAV62mh4kmoeBIqnkOuG6QZ3a822ScUAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BeltForGasesFilter" GraphicalStyleName="ISO Filter - Belt For Gases">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVFhH7Y5RDsMwCEN7/0tnZZo7F5kU0irbRya9iTzAZWut/RQpZyIl2H/2dwuf6ZESZAJ6rAPWAeuAdcDwAbboebLPnB80zPUonME18y1UU7gKmcywEbkKmcywEbkKmcyjeD/2Jwa4HoUzuGZOj0N+hp/EfwNICXqLGTL7UoK/OGD0iOyulAABmSCmsicl4IBMmFHdkRL4gKvA6rwhJVABUWhllpESRAHeZ+cUUoJeAHqZmR5SAgu4i8/0SDkTKWci5Tza9gJ47c2/MFgTsgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="CartridgeFilter" GraphicalStyleName="ISO Filter - Cartidge">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACmSURBVFhH7c7RCoUwDINh3/+l5/EiUMLf0SLuwJjweRFj6DXG+CsMV8JQfs/zesU3HYZSGZg5B+xxAPHewzviPYeh0EA22ulGGEpntNONMJTKwMw54JMDstFON8JQOqOdboShVAaEupX/MZTKwMyeB2SjnW6EoXRGO90IQ8lGM9T1zGEolYGZPQ6QLJfsm/IMhlIZmDkH7HHAW77pMFwJw5UwXGdcN3rM/Y+XoyZkAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CartridgeFilterForGases" GraphicalStyleName="ISO Filter - Cartridge Filter For Gases">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADHSURBVFhH7Y5BCsQwDMT6/0+nm8OAMXLqoTQLpQvagzoRPsYYfwXlTlCK32/+3SI3MyhFJ7DiO+AdBxB5N8kbkXcZlIICVdTZRlAKJ+psIyhFJ7DiO+CRA6qos42gFE7U2UZQik5A0LbzHqXoBFa884Aq6mwjKIUTdbYRlKKKVtA2uwxKUYU7dN+iFAp0QhHnHUoRA53YxH2DUuTAVdDdT1AKClRRZxtBKapA9t0dgVKsAvrW2axAKWbgLrmZQbkTlDtBuY9xnCIM9ZcgLZFSAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CentrifugeGeneral" GraphicalStyleName="ISO Centrifuge - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVFhH7Y5RDoAgDEO5/6VR/si64qYwFsPHi8lzLS211q2oMhIUt1qFfKuBghx+5Qw4A/4zgBa9zYEYFI3+Nd5kUWQdwLzEm0dxBiiHLMzwdKDINoAFn7D2oDgDukMWsmLpQpFlQPvOou+VoCCHGjNuUWQYsAr5VgOEB1bqQZVWtg+YgSojUWUkqoyjlgtkXt+tlBqmogAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DrumFilter" GraphicalStyleName="ISO Filter - Drum (Disk)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVFhH7Y5RDoQwCAW9/6W7yyaY2kwRjPvqhyZj2gHK21prS0GpBKUSlEpQKkGpBOUZ389+B8aeLChnRMuiWgRKIvt4NQTKkfKjhX6UPdXlTnYOZc/SAFeXO5l5lM4bYHkA42qI7BzKnuUBjGoI6jeHfj8ES6IaUXlrWhix+l09h/t+OBl0rG/G2EuMfdPCv3h2ABW+87e3v6wApRKUSlAqQakEpRKUOtr2AVSfT0yTDYzWAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Filter" GraphicalStyleName="ISO Filter - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVFhH7c5BCsAgDERR73/pVBcDJYwiCBHkF14XI4TfIuIqO1ayo/Rv/I7km5kdZefACgEEEEAAAW8E/M12ce/aZuwoOwdWCCCAAAIIeCPgVL6Z2bGSHSvZsU60D1pmN2RomGRNAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FixedBedFilter" GraphicalStyleName="ISO Filter - Fixed Bed">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADOSURBVFhH7Y5BCsMwDMD2/09ny0EQjJzaFDIoLagH2Rb5jDH+isqTqITfN3+3iM2ISqgEdrwPeMYDIPOQzfAZKqEaMaq3KoFAJbTSuVMJa6ASm3RvVEIMXAW7+xOVYIEs2tldUQlZIPrqnqESdgFmlZ0dKuEqcHc+UQm7ALPKzg6VkAWir+4ZKsECWbSzu6ISYuAq2N2fqIQ1UIlNujcqgUAltNK5UwkzUIkY1VuVQCSGVg/ZDJ+hEiqBHe8DnvGAu8RmROVJVJ5E5TnG5wseDOuhcjqcswAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralGasAirFilter" GraphicalStyleName="ISO Filter - Gas (General)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVFhH7Y5BCsQwDAPz/0+79UEQjJLaDbhQtDB7mDqDhpl9CpWdUAnun/8dEZsRKkEmsEMDNEADNEADNEADNOAfA96OyL6lEiCQCc1U3lEJ5kAm5lTfUAli4ClYvXeoBCywilZuZ6gEq0D02TsGlWAXwLfMzQ4qgQdOic0IlZ1Q2QmVfdi4ACXVMWpYxKECAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralScreeningDevice" GraphicalStyleName="ISO Screening Device - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVFhH5Y7BCsUgEAP7/z9tXw6CLKNZlfqgLUwPg0n2KqX8FZQnQSl+n37bxN4ISpEtcLgOlKIGXYHD5VGK3eHKuw5wZYTLoBS9oCuMuPcoxSjoSlvcW5RiZmTE+w+wA08fIEZvXQ9K4YKR3nvXg1K4YJZvHtBmXQ9K4YKOmnc9KIULZlDH8gFi94hMHmXL6hHZHMrI7BEz71ES2dKZcYGyhyufHRcoR/RGVsYFSkccWx0XKDPU0Z1xgTLL7rhAeRKUJ0F5jnLdE+hVRl/DOuoAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralSifter" GraphicalStyleName="ISO Sifter - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC5SURBVFhHxY3RDsJACAT7/z991gesJQNdzGU1mdgbduFYa/0VlE5QOkHpBKUTlE5QOkGpcv7OP56poOx4Hw3oPQUloRxRMhmUQSyslnY+yLMMS7UsZrrc/fEQzkyzlL8+BsuCHZ1yoLCjUw4UdnTKgcKOTjlQ2NG5DYJwT0yzlL89PrIIZ9RMl0MZRLlbQEx6KAlloZLJoOyII3Eov6egVPn16DconaB0gtIJSiconaB0gtIJSh/reAFINmc0QaMqpgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralSortingDevice" GraphicalStyleName="ISO General Sorting Device">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVFhHxY4BDoQgDAT9/6c5S1IP6wAthz2TMTLS3R6llL+CMhOUmaDMBGUmKD2cj7wq9l8ElDNs6S9LoBzRK1tdAmWPWcnKEigtEuwNj9wVULZEwlq8cyiV1XLFM49SkOFd2OyWp3AMRRll3g+biy2U//14uVyxPddHPby8BOXfDlWcavcio8yHUHRoBza7BaUyG57hmUfZsrqEdw6lRcLcgYG7Asoes+BIsYJyRK9kpVxAOcOWrZYLKD1IqWL/RUCZCcpMUGaCMhOUmaDMoxwfxSlJUnsNFpwAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="HEPAFilter" GraphicalStyleName="ISO Filter - HEPA">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVFhH7Y5BCsUwCAV7/0undfFAZJJo+8nfWJguRjN4jTH+CsqToBTPZ79PxGYEpcgEVvQBfUAf0Af0AX3ATw54e0T2LUqhQCbkqbxDKXwgEzOqb1CKGNgFq/sGSkGBWbSy60EpLJAJz3bIR1AKBSj0dhZBKXyAYjtH8whKEQO7YHXfQCkoMItWdj0oxSwQfXaPQClWAc0yOytQCgt8JTYjKE+C8iQozzGuG3xWE4iFxTB+AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="IonExchangeFilter" GraphicalStyleName="ISO Filter - Ion Exchange">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVFhH7c5RCsAwCAPQ3v/Sbv0ISEhFcHQgFl4/IoQsM/uVDG+SIbxvfyXcyWQImYLIDOgxwDvlG25897kiQ8gURGZAjwFV3MlkCJmCyAyYAZ8MqOJOJkPIFERmQI8B3infcOO7zxUZQqYgMgN6DKjiTibDm2R4kwzvsfUA5kbpoz247k8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="LiquidFilter" GraphicalStyleName="ISO Filter - General Liquid">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVFhH7c4xCsAwDEPR3P/SbjpoMZIxpLgQVHgdFDB/RcSv6DiJjrC/93ck38zoCJ0DFQfcEQBqB/WGXaEjdA5UHOAABzjAAQ5wwCcBoHZQb9gVOkLnQMUBdwScyjczOk6i4yQ6zon1AF8zJXYGdrCwAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PackedBedFilter" GraphicalStyleName="ISO Filter - Gas (Packed Bed)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADNSURBVFhH7Y7BCsQgFMT6/z/t1sOADKnz3C4ulBbSQ0aDR2vtr6DcCUpxfv13C286KEUlMON9wLMeQLHkaHdQihRLjnYHpUix5Gh3UIoUS452B6VIseRod1CKFEuOdgelSLHkaHdQihRLjnYHpUix5Gh3UIoUS452B6VIseRod1CKSmDG+4CfPODbR1TvohQKVEIjK/dQijFQiXVW76AUHkjB1fMdlIICV9GVsyMoxVXAffUcgVLMAtoqZ2agFD1wF286KHeCcico99GODxta753tsvvRAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PerforatedShellCentrifuge" GraphicalStyleName="ISO Centrifuge - Perforated Shell">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVFhH7Y45DsAwCAT9/08Tu4u8ILIKxhQU04w4ZojIVVSZCYqpTrH/WqAwBv/SAXSAtcDi3UNRJSCaDqADrAUW7x6KDuiAKgHRdAAdYC2wePdQVAqI4n13B4UxqBExi6JCwCn2XwsQDNZRBlV+5XpABKrMRJWZqDIPGQ/Wteuhi8tnywAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PressFilter" GraphicalStyleName="ISO Filter - Press">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVFhH7Y5BCsAgDAT9/6etCDayLNJDHEvpYWCdjSSl1noUK0msJLGSxEoSK0msJInQIsXY2ffeYSp0KNNpH2ExlOm0j2A+7uBbB2T8sYUOZTrtIyyGMp32EczHHfwHPDpAhzKd9hEWQ5lO+wgtUoydfe8dpNjFuw+gGDv73vlxAitJrCSxksRKEitJrCSxkqOWC/UC3a8JSw2GAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PusherCentrifuge" GraphicalStyleName="ISO Centrifuge - Pusher">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACeSURBVFhH7Y5BDoQwDAP5/6fLckhkW0aCUsJhcxjJGULqbYzxKVZWYmUlVlbi5U+/Cb2FQ0pZWsntAkcOwqlH3I46mnFICUv6w1P0XgaSXeCkAOZZ9EYGkl3gLwscH64Q+7PojQwkYeksz6I3MpDsAl1g8aOI3stAsgtIgSCcesTtqKMZh5SytJLLBd6E3sLhC6ysxMpKrKzEyjrGtgMcJ8+9Tb0bLQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ScrewTypeWithDecanterCentrifuge" GraphicalStyleName="ISO Centrifuge - Screw Type with Decanter">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADoSURBVFhH7Y5BDoQwDAP5/6e7y0q1bBNCVkC4cBgpmdptlzHGo4Syk1B2EspOYvnVdyJv8QJpoSv5+wPrfAV835x/Oy+QSeEsfh8Gke8HDj6wushX8B4GkRTywnSRr+A9DCIptCkkZxW8g0Fk8kh2VsE7GETuPMJz5jI8LwcVZp577jI8j0EkhbwQEWX2eu4xiKSQFyI8k3U2WV4gKeSFPaodP8MgsngZM3NHeT/HIJJCXshYs0d5P8cgkkJeOIvfh0Hk+wH7wFnmXfM+2XmBtNCVlD9wJ/IWL08Qyk5C2UkoOwllH2P5ANA2n+0wjV9hAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ScrewTypeWithPerforatedShellCentrifuge" GraphicalStyleName="ISO Centrifuge - Screw Type with Perforated Shell">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADsSURBVFhH7Y5BDoQwDAP3/59ml0Mt25iQFVAuHEZKpnbbz7IsjxLlTKKcSZQzyfKn70Te4gXSQlfy9wfWeTCceyZl3MnOCySFvHAWvw+DyPcDBx9YXfIdvIdBJIW8MFzyHbyHQSSFNoXirIN3MIgsHqnOOngHg8idR3iuXIXn5aDDyHPPXYXnMYikkBcSKbPXc49BJIW8kPBM1dlkeYGkkBf26Hb8DIPI5mXMyB3l/RyDSAp5oWLNHuX9HINICnnhLH4fBpHvB+wDg+HcMynjTnZeIC10Je0P3Im8xcsTRDmTKGcS5UyinMfy+QK2nLnTR5InRAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SolidShellCentrifuge" GraphicalStyleName="ISO Centrifuge - Solid Shell">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVFhH7Y45DsAwCAT9/0+TuIvYRQkKxi62mGbEMcPMtkJlJyhutQr/a4IiGPyLAtIB0UKWt3soFKAABShAAQpQwEkBVTzvelAEg4yKWRQnBKzC/5qAyBAdzUDlV7YHVEBlJ1R2QmUfNi6gAtO5/a8H/wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SuctionFilter" GraphicalStyleName="ISO Filter - Suction">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7c4xDsAgDENR7n/ptCAFWssrH4YMTwomUtwi4igbkmxIsiHJhiQbkmxIWsM7UvLmuDsH+dilClSBKlAFqsDdBVT+Kd3rdKfTnfTbmYN87HJ3AUreHHe/jxNsSLIhyYYkG5JsSLIhyYacaA8qvTFqz4C38wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TwoScreensScreeningDevice" GraphicalStyleName="ISO Screening Device - Two Screens">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVFhH5Y5BCsMwDATz/0+73YMgmJFXtoMLaWByGGtXulprPwXlSVCK76ffNn1vD0oxKqgUB24WpYhgVpD5HjeHUlQXON51QFaWeTF6EyhFFnzKByjFKJi9kc9mA5TCBau8/4BsLnz2HqAULngnm5V3PSiFC/Zk864HpXDBKv95wD3relAKF3RE3vWgFC5YQR3LB4jdIyp5lHdWj6jmUPbMHjEzj5Kols4sFygzXPnscoFyRLZkZblA6eiXrS4XKCvE0p3lAmWV3eUC5UlQngTlOdr1AV2PR1QibipqAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CycloneSeparator" GraphicalStyleName="ISO Seperator - Centrifugal Cyclone">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADXSURBVFhH7Y5BCsQwDAP3/5/Org6GIKZx1EL20sKUdhzJ+Ywx/grKk6AUv0evx3ivg1LshHfoelCK9wLvBd4LrIKadcVFdw6lWAU1c/xMsZoJlIKCcuV9Ps/cu5tBKTzYFRVpDqVIi4o0h1LMwa7ESbIoRVLiJFmUIilxkixKkZTM+Nkui1KkRUWaQ1nEZeF5gXJmLtH3VanPrs45KB0v07/j8/l/BUpitzRZLlBe0ZWnywXKFVdL7iwXKDt82d3lAuUOtfTJcoFyl6fLBcqToDwJynOMzxeu6yF6ss4blwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DiskTypeSeparator" GraphicalStyleName="ISO Centrifuge - Disk Type Seperator">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADHSURBVFhH7Y5RCsUgDAR7/0vbBhoI2V1UmvrKw49BnWxijtbaT6FyJSgu9Rb5LwOFCD7l/xawnJNrDJVD0Rlo9ZxhLqPqKFRw8BOVkR5ECtpbNStYj5qBIgRVkzNTV1kUnaGRiiyKwaGWc3KNoXIoOgOt7pl4+l2h6ihUkHzC3tk50oOoGEp6ZBbEHbRTNTkzdZVF0Rkaqcii2AvsBb60gN2fEmf5PYJCBBkVWRRfWOAt8l8GiBnU0BmoHGUvUAGVK6FyHe04AYKUt9VUV6lbAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="DrySeparator" GraphicalStyleName="ISO Seperator - Dry">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACESURBVFhH7Y5BCsQwDMTy/0+7nUOhGKVxYnAvXtAeROPRMLNfQVkJSnH/9JfG3/WgFJHHEVZ3UIoO6IAO6IAO6IAO6ACRjYi8R/nmNCL6DqVnN2Lne5RE9OjOuEA5Y3V8d1yg/GI2cjIuUK7wY6fjAmWEZzQzLlBGyY4LlJWgrARlHTYusodrMFya2NMAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ElectromagneticSeparator" GraphicalStyleName="ISO Seperator - Electromagnetic">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhH7c5BCgMhEETRuf+lTQoSaORXLBXMLCbwsvjTtl6ttb/CeBJGef/0t63f28MoyeHEaA9GueUD1CrXKmoVRhke/HxP5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMki5O5xyMQgfVKtcqahVGGR1MPQ9YfoDsPiI5j7FafUR6DmNv9hEz8xhJunTmcsHojJbPXi4Yf3GXrFwuGEf6y1YvF4yJ76U7lwvG1O7lgvEkjCdhPKddL5zjI3i1L4LAAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ElectrostaticPrecipitatorSeparator" GraphicalStyleName="ISO Seperator - Electrostatic Precipitator">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADmSURBVFhH7Y5BCsMwDATz/0+nncOCWFaxnYDbQwrTWCN55eM8z58S5U6ihO+Pv8d4rhMlzFyeYZQTJbwPeB/wPuCvH0DP8Rlx1YMoIV3EdYFdr5sXUYJfHAWJ1XtRwiiI2p38Ve1ECfWin1VXX6m+mxFRgocIOflai+q7GRElzIS4pxbV6ZyIEmZC5PnWM1/htRMlzAThRnNeO1GK5bDFeYiyUkM4d6He6+acKB0Po3a8X+srokzMhq4shyg7RuGryyHKK7old5ZDlCN82d3lEOUMWvpkOUQ5y9PlEOVOotxJlPs4jw85mweUgmImOwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralSeparator" GraphicalStyleName="ISO Seperator - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADDSURBVFhH7c5BCsMwDETR3P/Sbv+iUMxPR06Eu0ngZTHIIx1jjL/ScCcN8f743Tb3zjRE5XFF6tEQzwHPAZUDOmY0REc50oyG6ChHmtEQHeVIMxqioxxpRkN0lCPNaIiOcqQZDdFRjjSjITrKkWY0REc50oyG6ChHmtEQlfKKywfg7hGV9xp+u3pE9Z2Gs9UjVuY1NNXSleXQ8EwqX10ODX85W3JlOTRM5mVXl0PDis/SO8uhYdXd5dBwJw130nCfcbwAD/dVRjrNZNoAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GravitySettlingChamberSeparator" GraphicalStyleName="ISO Seperator - Gravity">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVFhH7c5ZCsMwEARR3//SiutDYERZM1pQCCTwYujZdJVSvkrDkzTE/eNvWbu3pSEywxnRHg3xEw/Y0aMhdixH1KMhdixH1KMhdixH1KMhdixH1KMhdixH1KMhdixH1KMheoO11n5NrwYNkVnafk2vBg0RDt71qq09hXULkVlctbWnsG4hokHs6NEQmeUZ/wdMPwCrj8jMa/g0+4jsnIat0UeM9GtosktHjkPDN9Hy0ePQsOftyMxxaBhpj80eh4YZ9ejKcWiYtXocGp6k4UkanlOuD4bZQ1gqDB/wAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ImpactSeparator" GraphicalStyleName="ISO Seperator - Impact">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVFhHxc5BCsMwEEPR3P/Sbv+iUMxPNY4Ht/C6EIrG1xjjrzQ8SUO8f/xtm3dnGqL0cUNHQ3SMI3U0RMc4UkdDdIwjdTRExzhSR0N0jCN1NETHOFJHQ3SMI3U0RMc4UkdDdIwjdTRExzhSR0N0jCN1NETHOFJHQ3SMI3U0RMc4UkdDdIwjdTREZbzi8QOw+4jK9xp+e/qI6ncazlYfsdLX0FRHV45DwztpfPU4NPzl7siT49AwmY89PQ4NKz5Hd45Dw6rd49DwJA1P0vCccb0A4clLUHOYqn4AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ThickenerSeparator" GraphicalStyleName="ISO Seperator - Thickner">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADdSURBVFhHxc5RCsMwDATR3P/SafZjwYix142oG3ikGYHU677vv8J4EsaTMO56nufFs10Yd/38D+hAV91ZYbS0oDsXjNY9kOaC0cYFtCw1mlcYLS1LjeYVRtOCEc2pjeq8wmhpQXcuGK17IM0Fo3UPpLlgtO6BNBeM1j2Q5oLRugfSXDBa90CaC0YbF9Cy1GheYbS6oPtNMK6MS2e/V63COFotru8RNYKxmh0wmtU2g5HsHqK2gnEmLf/2uGBcmR15c1wwJvXY2+OCcYePdo4Lxl3d44LxJIwnYTznvj6LXCtwWpkA3wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="VenturiSeparator" GraphicalStyleName="ISO Seperator - Venturi">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVFhH7Y5BDsMwCATz/0+73QOShQYDTuJeGmnSesKyvsYYPwXlSVCK76PXbfxeD0qRha2gMufdDEqxCto3/0usvgmUIgrOPvo/E3kDpaCgd9k5cjMohQ/SooqjmRmUIgtW+V/gsQtki4xuDqWgRekymEkzJEUUlDfo7Im8gVJkQfHEDEpRWV7h1Qs8MYNSREF5g86eyBsohQ/qnC6DmTRDUnQXGd0cSiMLZ1TyKGd2L1HNofR0L9GZR0lUl3bKBcqIbHm3XKBcEZXslAuUGb5st1ygrGCld8oFyip3ywXKk6A8CcpzjOsDr+oZgnlMnHAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="WetScrubberSeparator" GraphicalStyleName="ISO Seperator - Wet Scrubber">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAChSURBVFhH7Y5BCoAwDAT9/6ereyiEMLZJCxUhwkgdm+xerbVPQXkSlOJ59NrG7/WgFKPhvtzi73RG/wRKQYNy1vuz/bbeOwtK4QdnizrZOZRiNhilClSBKlAFqkAV+G8BsVsiMo/SsloiOofSky2RuY+SiC7NhAuUb8yWZ8MFyhFvISvhAuUMH7YaLlBG6KE74QJllN1wgfIkKE+C8hztugEA41NIqZGyuwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Furnaces">
+      <Class name="BurnerFiringSystem" GraphicalStyleName="ISO Burner - Firing System">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVFhH7Y5BCsAgDAT7/09bL4EQJrqxYi8WhsIkbvZprf0KypOgVOlf//FMBaWCHf9aAuWMePRLCZQjsmOrJVBmzI6slECZ8WsBNbxaAmWkHFrYRxnJAqueQBmhQHOjmQJKTxZmfjafgdJDQdEpOxkoPUq4spOB0qOEKzsZKI0sJHp1j0BpUEAWWtn1sOx6N/GGwXLwYIVb4Ba4BW6BpQK7iTcMlCdBeRKU52jPCxgVIXosdlVWAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FileEvaporator" GraphicalStyleName="ISO Film Evaporator">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVFhH7Y5BCsMwDAT7/0+n9UEwLBPZdcC9NDB4NYJVXtd1/RSVJ1F5EpWrfL7P47tVVK7y/4EjPzCO7JJdhkrSFe3uiEqye6TbEZVk90i3IyrJKCpsZ67InaGSVBEL09V75zpUEitMV++d61BJrHDkhDu+M1QSK2TOuTJdh0pihcw5V6brUEmskDnnynQdKokVMudcma5DJbFC5pwr03WoJFbInHNlug6VxApHTrirvILKZHYkd7nvUGnkkco5526Gyjtm5d8eH6jsuDuyc3ygckYe2z0+ULlCHX1yfKBylafHBypPovIkKs9xvd7QXwOYasKt/AAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GasFlare" GraphicalStyleName="ISO Gas Flare">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABtSURBVFhH7Y5BCsAwDMP6/09nzaEXY1aPsOTigRioLdaKiFGo7IRKlf3tHz9ToVLhjFcjqFQYDcDRSgSVNxzggOSMVsYTKhVGA3IUwTsqVN7AQQc4wAEOcIADHPB7QA58Ad+/QWUnVHZCZR+xHgiKcSrr3ggOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="IndustrialFurnace" GraphicalStyleName="ISO Industrial Furnace (General)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVFhH7Y5BCsAwCATz/0/b7iEgskGTgLZgYXoYWDNDREqhMhMqLe+H3xb2xgoqNTvHNNEdlZrSgNPHJ5E9lZPSgNvHJ94dKkEHfDIAzoNtrNNQCY6OdUAHdEBGgAfbWKehEnjDKB3w3wBwGxHZUzkpDwCnEdEdlZryAIBju9gbK6jMhMpMqMxDxgOuNh1+Xp+i+QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SteamBoiler" GraphicalStyleName="ISO Steam Boiler">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVFhH7Y5RCsAgDMW8/6W7OfCnRK0ilcET4kfENsXMroIyE5QR3lOvD/+2AsoRtJRcFJQ9Zkt2IlAS0eGrESiJ1IA65DR+R4Pl4MMOClCAAhSgAAUoQAEK+GfAafyOBspMUGaCMg8rD6dIN2T/9sOWAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="HeatExchangers">
+      <Class name="DoublePipeExchanger" GraphicalStyleName="ISO Heat Exchanger - Double Pipe">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVFhH7c6xCoAwDADR/v9PRykkSjndcnVweJBehnRExFYYTRhNGE0YTRhNGE0YTRhNGE0YTddwjoa8V3drgGWH9c7josu3P2DJm/NuDcuiy/+B1w9Y8ua8e3/sgNGE0YTRhNGE0YTRhNGE0YTRhNGE0RPjAM/ZPV5k+XuMAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FinnedTubeHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Finned Tube">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhHxc5RCoQwDABR73/pKoVmgxmVLDh+PEinrXUbY3wKowmjCaMJowmjCaMJowmjCaMJo+k3HKNlvTnfjeG08Za/fqBcaq6zcjaGzqXmOitnYzhGy3pzvhvDaSMrl5rrrJyNoXHpSedblxtvuf0By3pzvpsXX8BowmjCaMJowmjCaMJowmjCaMJowugZ2w5CWR98lzQvuAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="General1HeatExchanger" GraphicalStyleName="ISO Heat Exchanger - General (1)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVFhHxY4BCsMwDAP3/09n8yAkcVT7UjqvcMUWkuJXa+2vSLESKVYixUqkqPh89gvxGYIUZ07K7xwhRaM//DTbO174ipNRhQg0twsiSMs8JLcLFyFS5iGZdUkCpNCTdi4LeIB4ZjL/usBy6utE/jE8WOqJvGM4PMCgmcg3hhsHGCQXecZw4wCaiXxjODzgxB951wWWUl8n8q8LKCaemcy/Lpn58HEj7dyEi0BWpCCZXRAhUqQgOS1OQVKioDkpGlbwC7Z3vOC5Ciqob0aKin5IhM8QpFiJFCuRYiVSrESKdbTXG9TnB5SzFkNaAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="General2HeatExchanger" GraphicalStyleName="ISO Heat Exchanger - General (2)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVFhHxY4JDsMgDATz/0/TgOQUlvVFKK00DYxZ21cp5a9QeRIqLe5f/aPg2whUMiJDIm8QKnuWmiYyVArZwUgkT2Xl7XDB68PlpuGC1W8Wm4cLWt9ZWNveNatuoeXGizO8/67AsuNFaY5ee+fBct9DcLjmomBWLWhOsGoWmNMLzgCvroG5odAj3iLzrmeoPQcoRPFyWJ/uz+EHC7AaOrWQgWW1fuifQ7ssLjE1DQ5vbrgsLlCRrNWD1YZLE4tL1JyV1WqzWFzAI7xAk5uXsPpRWdm1hNeHSuHtEpE8lT21SXaRTIZKRqRp5A1CpYUMYeDbCFSehMqTUHmOcn0Ap8sndMj4mEQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralCoolingTower" GraphicalStyleName="ISO Heat Exchanger - Cooling Tower (General)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB/SURBVFhH7Y5BCsAwCMD6/0+79iAMCZ3tOmXgIDuEqmkikgrKSFAS/Rs/F3Z2BkrCu/iTgOWlC+9RWiogNWD1uOKdQ3mnAlIDdo8rnnmUSgWkBrw9rjztQTmogNSAU8eV2T6WFdD1aewNheVkYIcK+GfAaewNBWUkKCNBGYe0CwDaK3C2m92NAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="HeatingCooling" GraphicalStyleName="ISO Heating Cooling">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAChSURBVFhHxdBBDoAgDAVR739pNMbGqqNCKZ/FS2A2LSyllKkwKmFUwqiEUQmj0vWyXRUuM/1ltPvwvd3DCPRy8wjZ3gYbjBm+Xu1h7FUz2GCMqn21hzGidbDB2CLyag9jrZ7BBmOLqT/gRZfAGBX5DYy9WpbAmKH2NzBm+lsCY7av33iEkWiJ83BsqWAz97n+MgNGJYxKGJUwKmFUwqhTlhXULFlCLZS9GQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PlateTypeHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Plate Type">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhHxY1BDsMwDMP6/09nczFlrkDnqB4IyJSCXGutV0GZBGUSlElQJkGZBGUSlElQJkGZBGWSf/jGFPrz/ncHK+S6983pruy9/OPeAcaiOuHeb9F9x7uxIGojdJM/4ZuxIPqmsuhOecI3Y0HURugmf8I3Y9GpTrj3W3Tf8W4s5Lr3zemu7L38497h9yCB/rz/7ccboEyCMgnKJCiToEyCMgnKJCiToEyCMgnKHOv6AIQCD4xJIOotAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ShellAndTubeBundleHeatExchangerWithUTube" GraphicalStyleName="ISO Heat Exchanger - Shell and Tube (U-Tube)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACfSURBVFhHxY1RDoMwDMW4/6VLh1SWBCPEKN6HpTwnfV1aa38FpQlKE5QmKE1QmqA0QWmC0gSlCUqTHHp8k/jXIIdwdPbgCdT5Hcryk2cQO0dvyvtQF/D4LtRRXVpUxu4JteeQ9+Hi8Beoo7rzRc8ziJ2jN+UUwrIezoA6U9hEV29y+K8KG5QmKE1QmqA0QWmC0gSlCUoTlCYoTVB6tGUF3/kbgFxXsD4AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ShellTubeFloatingHeadHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Shell &amp; Tube (Floating Head)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhHxY1BEsMgDMTy/09TyoyL8ag9JKAeNHjlZH211v4KShOUJihNUJqgNEFpgtIEpQlKE5Qma+jxJPlWsIb00bcfnkCdcyjLd95N9MaNkT9DXZR8l+ipbzCHPp4i+vMbzKEuSr5L9NQ3mENd9LyT3BvzyEv48eEOqHMNPZ4m3xs3q7BBaYLSBKUJShOUJihNUJqgNEFpgtIEpUe7XqfA56XHQEUCAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ShellTubeHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Shell &amp; Tube">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVFhHxY1RCsMwDMV6/0tnaWFdbBRMQ6p9CPJk5/lorf0VlCYoTVCaoDRBaYLSBKUJShOUJihNYujxTcZbX2IYlmYfnlJ1/h5peOZd5N6Q70exuErVOx/0vIvcG/L9KBZXqXrng553kXtDDmEY5sVVqs4Yenyb8d51MwsblCYoTVCaoDRBaYLSBKUJShOUJihNUHq04wNsdvWX3nZ8SgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SpiralHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Spiral Type">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAErSURBVFhHxY3RjsMgDAT7/z+dFlSjzbAY04f0pLl4x2v6uq7rr1j5JFZmfP7aPwu7Fax0VH6k0iFWKj89enBjZZA9Ej+y69ARKxvuuLmg4mNHp3j5PdJvzDu0y69jFihnxxnVd2YhxZjpVmhHv5yVe0BJc5u5J+ywz9zdLWyO6YjraOauuzEUD3VWVh2dbR5DUsx2u5zteh7DwZG6bOfytBtDVkIOql7ztBtDVkJWl+1cnnZjODk6yNmu5zEUH9FZWXV0tvkWNod0xHU0c9fdLWyOuSfssM/c3STMA3QrtKNfzsosUFwd7qi+M4kuv2X9xrxDu/w6rGy4o+aCio8dnWJlkB23XcBdkO0CK5XdjzhObqx0VB6tdIiVGfEjDnYrWPkkVj6Jlc9xvd4bYHQZ9D1JxAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SprayCoolerHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Spray Cooler">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACjSURBVFhH7dBBDoQwDARB/v/pQA6WzNBKQJiBA4dStA041i6ttVdhdMLohNEJoxPHLVfTOwJGNRuSXXm3w6hi6Gzw2fcyjFkM01Pp8zhnMGY6ME6lz+OcweiE0Wn/Y/tZLc8nGKuNFsFY7fIC/YNqekfgOPigGse3F+j6Ek843KPBDaMTR/ir7hjN4/gv8IUFqukdAaMTRieMThidMDph9GnLCvRL3a/8PURSAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="TubeBundleFloatingHeadHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Tube bundle (Floating Head)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACWSURBVFhHzY5BDoAgDAT9/6eRkCilGS8GBg6TdKe65SqlbAWlCUoTlCYoTVCaoDRBaYLSBKXJGGrMxP0KxpAOHvGA2cT+duMdaAnuD7End/bhhAesJN555pbfIS2+3B9iT+7sw+4HtJCXNc8m9rcbQ0gf0A+zGUONkbhbBUoTlCYoTVCaoDRBaYLSBKUJShOUJig9ynUD5qoxajw+ZFYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TubeBundleHeatExchangerWithUTube" GraphicalStyleName="ISO Heat Exchanger - Tube-Bundle (U-tubes)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVFhHzc7BEkAwDABR///TxaE0mc2Fdjm8GdnQ2lprn8JowmjCaMJowmjCaMJowmjCaIrDMWbjfoU4pAt/8QMzjWd39wO8UH30FN5xPQg/cMpnhgXp+1nymeWiam/lM8tF1d7AO8KQXjjnmcazuzikl6qPZorDMWbjfgWMJowmjCaMJowmjCaMJowmjCaMJoyetu12MF88zRmdcAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TubeCoilHeatExchanger" GraphicalStyleName="ISO Heat Exchanger - Tube Coil">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVFhHxY7RCsQgEMT6/z/t2cK2umRPyl3Th4CTGdSttfYqKE1QmqA0QWmC0gSlCUoTlCYoTVCazKHHJxnfCuZQjP4F3X8dqh92X3XBqh/J27LIjvqd8FWfybupyEQ3bu7kcJmpPw+pqIhdtR89bbIri2+stntfbbI/D0dYXPwrdP8cenya8b3jzSxsUJqgNEFpgtIEpQlKE5QmKE1QmqA0QenRtg85HkVWIyFLYQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MechanicalDrivers">
+      <Class name="CombustionEngineDrive" GraphicalStyleName="ISO Drive - Combustion Engine">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVFhHxY6BDsQgDEL3/z/tXZe4KILiZvSSd5kUaK+U0lGouBMq9vj/4o+CXgcqMpwljgehYsmr0okMFTOzixEnT8Xg6/LMqIeLi5Znen2tsHh5RvW2wuCAmCvQW6Lm9WNQEjgeBcvWj5MHuMWuT4F5OVC4PgXm5UDh+hSYlwNF+BD09EC/HChcnwLzcqBwfQrMy4HC9Skw/3zcD6Pc8ShYtn6cPuAWBgtirkBviZq3wqDoLfYBt7j4iF4fFYNVR4x6qJj5eoSTp2JJlMweMpOhIsMpdTwIFXvkJQz0OlBxJ1TcCRX3ka4fwXMrcH9qcA4AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ElectricMotor" GraphicalStyleName="ISO Drive - Electric Motor (General)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD3SURBVFhHxY4LDsMgDEN7/0uzBi0dNc5vRXTSm4odOzlaa69CxZ1Q0eP8yR8FZzNQkZFZkplBqDjyV2khQ0WluhjJ5KkoPF2uRD1cXLRc8fpmYfFyxeqdBWsweVg1f384S8TzfCGaYd79kQhbM5EvMO/34QSF0cdZz0PQNw1k9HHW8xD0TQOZgt+3pVtM89dHMVjRRtA3DSTylWqPaSCRr1R7TAOJfKXac330hxP2vJFqx/3x9gFdMAosHanmZyG5qEr6gC4uPsLro6Kw6oioh4rK0yMyeSqOSEn1kEqGioxMaWYGoaKHLmHgbAYq7oSKO6HiPtrxAfZZG4AFVmXAAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Gear" GraphicalStyleName="ISO Gear">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVFhH7Y5BCsAgDAT9/6dtFWzLkikhYCzFw4BmZ0lKrXUp5jCT+3E+sxg7+97rIcEs9gH7gH8c0FwL9SzUw4DweoT2MSC8HqF9DAivR2gfA8LrEdrHgPB6hPYxIMiL9jEgyIv2MSDIi/YxIMiL9jEgyIv2MSDIi/YxeKO5FupZqIfBLPYB+4BvH5DF2Nn3Pj8rMIeZmMM8ajkAlljroVDOgtIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralDrive" GraphicalStyleName="ISO Drive - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADgSURBVFhHxY4BDsMgDAP7/0+zBYmqBBtMQDDppuLYTp6U0lWgeBIo9vj/7A/ivQpQRChLFI8Hil9CpRMZKBZmF3uUPBSN1eWFUQ8WNy0v9PpaYfPyAutthcEBNkd4n4d56sdKUTBbP24eoBQYzBfN0wGD+aJ5OmAwXzRPBwzmi+bpgMF80TwdMJgvmqcDBvNF8+9HfgglzBPN1o/bB2RhUGRzhPd5mKcVhLII8gFZ3HxErw+Kxq4jRj1QLKweoeSh+MVKZg+ZyUARoZQqHg8Ue5QlCO9VgOJJoHgSKJ4jPT+vBSF60TGhvgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TurbineDriver" GraphicalStyleName="ISO Drive - Turbine">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAChSURBVFhH7Y5RCsAgDMV2/0s7NwiMWqe1Wn8chEEUX66U0lZUGYkqveQv//QziSpHeYZBntVQpRU5GhYgh79euhqqbFEbhmUBrWGYHtA7DNMCrMPgDhgdBleAZxhOwAl43pDIO1CKn8u9WN4oxQnYHfDKrD0h7gAYDZkWANaQ6QHQG7IsAFohywOgFhIWADIkPAAI2RYA2wMsqDISVcaRrhuhGGU28ug4AAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MiscellaneousEquipment">
+      <Class name="BeltScale" GraphicalStyleName="ISO Scale - Belt">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhHxc4BCsMgEADB/P/TtkI1h9leRWUbmCArnl6llL/CaMJowmjCaMJowmjCaMJowmjCmHl/9bfsMW8MmTiAhn2TneuLGdmgTHauL2bUw7seM8ewgy745V58Xhi1vVlLZ/piOLw07PQDVsQZM+7FMKhqe3E/thMwknb56UdgHNVLo3F/B0YTRhNGE0YTRhNGE0YTRhNGE0YTRk+5XtgNV0RWpoOOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BoxTruck" GraphicalStyleName="ISO Truck - Box">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVFhH7Y5BCsAgDAT9/6fTKmhDGAIeunrIYSCMWbPNzI6CUglKJSiVoFTyDe+oYt4cd9cQHv6iClSBKlAFqkAVuLuAgnlv3Y1iyLBIwQy/3+cszxIC2See3SzL2wpkH0RoN8uj7PSQJ75n7GRRKkGpBKUSlEpQKkGpw9oDsskhendcavAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BulkStorage" GraphicalStyleName="ISO Bulk Storage">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACJSURBVFhHxc7bCoAgEABR//+nN3vYChlMu4zBCRlytxIRS2E0YTRhNGE0YTRhNGE0YTRhNGE0YST12V9D2rs9GMno4F9+YHroxPcYr2aXp9F7GNPT5WnkPsa09AfeLk93czh+tDz15p2HejTkvmNvG2wYTRhNGE0YTRhNGE0YTRhNGE0YTRg9UTZvsI8MZ4iQ6gAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="CarTank" GraphicalStyleName="ISO Tank - Car">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVFhH7Y5BDoAgDAT9/6fRmpAUHFSULgc9zIHR3e6SUpoKSiUolaBUglIJSiUsNz2a+kbmKE5+fkOrt3wEHc9Qf/mYOSD6eKa+0/wQxT/gH9AcsD+CR1B/+fj8gF1sKor6lnEQHh9qFdT0ZlAaFL4qfJQhaTwqGznA8OGrokxvBqXHSu4UeXoyKJWgVIJSCUolKJWgVIJSR1pWgq1FVlthvwAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ElectrolysisCellGeneral" GraphicalStyleName="ISO Electrolysis Cell - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACdSURBVFhH7Y7bDoAgDEP5/59GMCFq1w28UH3w4SRwtkJTzvlVqFRCpRIqlVCphEolVCqhUokVRc0C/6pY4Sze5S9wuYAX7DH6jhVBEGcRuOtlrQiCOIvAXS+7HcpxlJbxssw1WqZxuKwClvZ3nEXgrpe1YjDYY/QdK75W4Cn+AqcKzAL/qhihhkolVCqhUgmVSqhUQqUSKpVQqSOnBfWUIXp3uL7tAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ExtruderShapingMachine" GraphicalStyleName="ISO Shaping Machine - Extruder">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACkSURBVFhH3c5RDoQgDEVR979pFBMabW9ABJ/Gj5M412ntklJ6FUYljEoYlTAqYVTCqIRRKYYtzeT3ezFcGOrR2hcDDLSW1LRmY5h8QFabj+GPB2R5B+4O4aEDCr/r9KKm/G+U32UPFuBj1O7yu+zBwkMH5B3FqR9/7AE+Rq1HbT6GLx4worUvhi8cMJPf72FUwqiEUQmjEkYljEoYlTAqYdRJywq+rktQ0j/3BQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FluidDistributionDevice" GraphicalStyleName="ISO Spray Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVFhHxc5bEoQgDAVR979pLK0CMXZC8HH9ODXYQJillPIrjEoYlTAqYVTCqIRRCaMSRqVjsS+vB95m33E3vhL+AZX65v5uW5iNkTrszr3Td1tMDKpn7W+GPetuePpz3jpiz7VFxuXy4DsDI6Hh2RbBaHlDZzvB2IuG3d3rYaxGQ57ubzBuUpdfOMMxMXhGNA+jEkYljEoYlTAqYVTCqIRRCaMSRp2yrD9CcSoK4WH2AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralCoarseningShapingMachine" GraphicalStyleName="ISO Shaping Machine - General (Coarsening Device)">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVFhH5c6BCoUgDEZh3/+lVwYDtWONst/AC98FT+WWzGwqjEoYlTAqYVTCqIRRCWNp/+W/R9q7CEYXvaQn8j1GN3WBt8Pd3T0Ys7UXGDXcXd3HcekFRg93vXvP4Q8LfKWdldWH5qXeR1GR++rD0gvgw8ELUKseqPjMY255mAGjEkYljEoYlTAqYVTCqGNpA63IK3C5um29AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralHood" GraphicalStyleName="ISO General Hood">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVFhH7c7hCoQgEADh3v+lTQOpvLFcqqkfd/AdMtKuU0rpVRhNGE0YTRhNGE0YTRhNGE0YR+Rf+Vu0dxEYz7RLrzwCY09Z1Ft2dHcEIxkdHn0Exq0yMDw08A3GKrq4NfI9x5yvLq/OZv2Gmxa3enPXQz4+tbyiHbvLen7S/wHffcBbMJowmjCaMJowmjCaMJowmjB60jQDDpyu7AArIaMAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralKneader" GraphicalStyleName="ISO Kneader - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVFhH7Y5BCoAwDAT9/6erFRradYIVdEXwMNBMNk2WUsqroHSC0glKJyidoHSC0glKJ0exqacZ9vXFLiRwN/8B3z2g+h7tz6Kz8QihgWRh5s/QmaFBtH7GTK5lKBuPEBKYBT9P3FD3xS4kcJU639BeRX08QiSDd/Ef8I0DnmbY1xdvgNIJSiconaB0gtIJSiconaD0UZYVJC0rcI6F2bYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralScale" GraphicalStyleName="ISO Scale - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACdSURBVFhHxc5RDoMgEABR739pSj8ouJkVDDpt8lKYJeBRSvkrjCaMJowmjCaMJowmjCaMJowmjCaMb6q/+jfsT5u6jcb5E+Kd6SBru+Kd6SBru+Kd6aC1N5ze+C3CIGuj2XxFX9z8gDa7OrOiL+qStHnUZldnVmCciY/ufATGme+DUTyzCqMJowmjCaMJowmjCaMJowmjCaMJo6ccH1/0gRoqImJ1AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralSolidsProportioner" GraphicalStyleName="ISO Solid Proportioner">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD0SURBVFhHxY6BDsMgCET7/z/tSjMXpQ8Kat2St9TjuOMopfwVFHeCosf5kz9EeyOgSERKIh4Nii1DoYkdFCvZYk1kH0VhtrzylMPiovKKl3cXFpdXrNy7cEpvobuE/mGYRtHFlN8/Fh6AZd4BNBxBcrwsPTMHWWQ/kqE95iCK7GV2tdccRFixYw48xJvxt+g9c0CIJ+Lz0PvmoEVm3jyDzvl9XA8oIW0UzO8ejUG+aWEGyusel/AtfgPdJdwFwzhL+IBLXHyEl4eisOqIpxwUK7NHRPZRbJGQ7CGZHRSJSGjEo0HRo5YQ2hsBxZ2guBMU91GOD85N66FX7b4EAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="IndustrialTruck" GraphicalStyleName="ISO Insdustrial Truck - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACASURBVFhHxc1BCoMwAEVB73/pVBdpgwxIXLwuBsLTnxxjjL9iLDGWGEuMJcYSY4mxxFhiLDGWGEuMpd/hPBbme99372G1DjSW3Q3jReOnC19tFKd1/HTRtLthXF2XTPdvsv2/YomxxFhiLDGWGEuMJcYSY4mxxFhiLDGWGDvj+AAw0Jz+uz+ikQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PelletizingDiskShapingMachine" GraphicalStyleName="ISO Shaping Machine - Pelletizing Disk">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC8SURBVFhH5Y4BDsMgDMT6/0+zZVKkkDpA2XadtEpui48cHK21W0GpBKUSlEpQKkGpBKUSlJHnY68tcheB0lktqViZR+nMCt7NDZTGSrmTs8g0J2mMBj3LX2KUGSiNajD66j9SeYflYKjKdmYMloMBI+dX90dYTgoN2+PkLDPacxYLhTtUvWfxCxf4Fvkso1+kTdXQKit9/eKvL4Dhhy9ArgtU+Jmvc+PiDlAqQakEpRKUSlAqQakEpY52PABd+gmSSuzL3wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PistonPressShapingMachine" GraphicalStyleName="ISO Shaping Machine - Piston Press">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVFhH5Y4BCsQwCAT7/0/n6oGQ2Enildym0MIUMurqUUrZCkolKJWgVIJSCUolKJWgrDk/+90iZhEonWxIj8w8SmfrAanhBT0ojdGg1SKxxxnVDJTGbDDLrQNWLXdGeSxnV5/1SOypGdVZTgKdFX1XkQz9lV7uVTzhgH8RdxntIzT1hrJk8trHqw/A4uIDyDUFFb7zu7d+7AClEpRKUCpBqQSlEpRKUOooxwdqeROI7v+mSAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RollerPressShapingMachine" GraphicalStyleName="ISO Shaping Machine - Roller Press">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACxSURBVFhH5c6LCsMgDEbhvv9Lu2YQiPZkS2+/hQ6+gacaXVprU2FUwqiEUQmjEkYljEoYo/Vnf4eMswhGVx2SqZzH6KY+gA5bi7IWUYswmvEgDao02hNhNJVBlUZ7Io4HL9vTHMfCEF9n/V9zHJMD1l2lu6ybbfix+Yxs7jY84QF3Ge8y/WLYlB2qqszrF69+AH68+AHUug8qfuf33riYAaMSRiWMShiVMCphVMKo05YPUqX1l8lPApsAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="RotaryTable" GraphicalStyleName="ISO Rotary Table">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAChSURBVFhH7Y5BCsRACATz/0/Pbh8EkZoomWAuBiqQMrZ9rbU+BWUnKMX/0euYmBtBWaVyIANllSnQXiAebC8g/NHWAjrmMUdzcxVQenxoDI/fhvxuFkFpZCGnc4HSOD2QzQVKUVp+4R+URrp8OBcoPXchT2celBGFUeDOkd+BcoeF3xF3MlBWeXIwgrLKFJgCU2AKfF7gDVB2grITlH2s6wfz41dEKO4BaAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RotaryValveFeeder" GraphicalStyleName="ISO Rotary Valve Feeder">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVFhHxY4LDsMgDEN7/0uzBikIjMmvEpv0psSxTZ/W2l+h4k2oaPH+5I+C3ghUZEQeiXgQKs6UShMZKipaEi1TMjkqChiOlAnZHBdJyCtSstldsMzOR1Syu1B8pJxbFqdEOBYVs+sSKBHQV811bQzBEgG9n7JjSJQI4lfwZoH+48FD/dXc2Mfwjhk09zk7Bjh4qL+aG/sYCkUK3izQfzxYbCVfsssSLNpKirmuLUug6OSpZpelC07R6V7ObYJRZN2ESnYTukjMpwIkm6WigCGrZCabo6KiYa8EyeSoOCMlkaKZTIaKjEhpxINQ0UIfYaA3AhVvQsWbUPEe7fkBBWblp6+YKtMAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ScrewTypeExtruderShapingMachine" GraphicalStyleName="ISO Shaping Machine - Screw Type Extruder">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVFhHxY5BDsMgDATz/0/TgrSSs14Miej2MAePBydXa+2vSOlESidSOpHSiZROpHQipZMsvuokfJ/JYuPRE1b3shAPVkcqVm+zePkDvZl11fssKMbMnun7WVO9zYJizOwjcTfrugc3H4chQpBimkH0swbw/rb4NfgOvjnmOAxBAZMOiL5q0i4OQ4iDkbivWu4i8GMXhyEoUKCp2tiUXRJFDFZHAbqqzWLjcOdUl8Xm4V1e/cBJ+D4jpRMpnUjpREonUjqR0omUTqR0IqWPdn0AjEX3lYLI0aEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Ship" GraphicalStyleName="ISO Ship">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVFhH7c4BDsIgEETR3v/SCCZjt+unxNJOE9XkRfjbAEsp5VYYnTA6YXTC6ITRCaMTRieMPfVX/3h2FMae/wNue0C7WPJsFsZMF//WA9plkZrmn9AZspnFTZQ/7LWozUmca/1qOQh+DC06Ml8XdTlLZ5HefF0MDpg1fMBzc9Ej9s7dbr7xAaMz30NNZ8rnZxidMDphdMLohNEJoxNGJ4w+ZXkAdM1XRGwFZ1kAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="StackChimney" GraphicalStyleName="ISO Stack - Chimney">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVFhH7Y47CgAgDMW8/6Wrjkr8Qzv4hDiE0iaZWSgoPUG5orz6NfQzu6CcMTp2G4FyhgIUoIC/A1ZHbiJQjlCAAhSggNCA3eWnESgJBSggJKAue6HfR6D0BKUnKP2wlAEIemc0jQYGbQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="WeighbridgeScale" GraphicalStyleName="ISO Scale - Weighbridge">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhHxc4LCsMgEADR3P/StkLCLttZsFamgZfIGD/XGOOvMJowmjCaMJowmjCaMJowmjCaMJowfuP9zNeyj/U1nEKHkRjcN8yeuR2r62NQFqxu0FldHwO4wK/yfp0YlAXdBrN3czticG+cPXP5n/w9AWMnH3zqEhjJPLCq/+zAaMJowmjCaMJowmjCaMJowmjCaMJowugZ1wu6ToEaFxKt3gAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MixingEquipment">
+      <Class name="AnchorAgitator" GraphicalStyleName="ISO Agitator - Anchor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVFhH7Y5BCoAwDAT9/6dr9xAoYWhyCBEkwiBOt+s+a61PQdkJyk5QZtnPfvFZFpRZZsAMmAEzYAbMgBnw7wGZ8ooMSlFRLqIMSlFRLqIMSlFRLqIMSlFRLqIMSlFRLqIMSkOXbwXR2e3cQOmxMl9I38bpb6C8cf7E47MZUHaCshOUfaznBQd5iRIIVrKlAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CrossBeamAgitator" GraphicalStyleName="ISO Agitator - Cross Beam">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVFhH7Y5BCgAhDMT8/6e7epMS2IHV2csIQUihzaiqX0HpBKUTlCrzzY9nKihVEpCABCQgAQlIwPWAdeArfWcHpYpy4A2UKglIQAKuB6wDJ+h7d1A6QekEpY8aD1apfxwh/zwGAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="DiskAgitator" GraphicalStyleName="ISO Agitator - Disk">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACJSURBVFhH7Y5BCsAwCATz/0+n8VBYZEQprb0YGIKjMbv23r+CshOUnaCscs65uFcFZZUJMAEmwASYABNgAnwewD5QqE9O8X0PSoMee5fVkVNQGpVlWR05BaVRWZbVkVNQGpVlWR05BaURLcugN94pKI1HyybA2wEIP6f42Rs/p6DsBGUnKPvY6wJQoFVGGYdo6QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GatePaddleAgitator" GraphicalStyleName="ISO Agitator - Gate Paddle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVFhH7Y5BCoAwDAT9/6ereyiEMLWp1XiJMAjjbtyjtfYrKDNBmQnKKNdzvfhbFJRRakANqAE1oAbUgBrw+QD9YBd/04NSzMqRH4QyJMVdsX/bzQiUYlS0fifTQSmo6N3TjAWliBx6kvGgFLY4OrKaIVCKXrw7sJIZgVKoOC0HM95ZUIp+/A38bQvKTFBmgjKPdpyYBT1eUFcalwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralAgitator" GraphicalStyleName="ISO Agitator - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVFhH7Y5RCoVADAO9/6VX81GQMm6KYB88KgzKtKk51lo/BWUnKDtBWeV6rhfPqqCsMgWmwBSYAlNgCkyB/y6g40GeBbtZ4HZQintQ33SIXMbtoBQUlLt72sm4HZRiF9QsyLOM20EpqsftD74sEGj3ad/dQSlckFAm59wdlMIFdygbeXcHpXDBCrrxukAXKDtB2cc6TrlfhRYrD2J3AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralMixer" GraphicalStyleName="ISO Mixer - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVFhHxY7RDoUwCEP9/5/eVRIIq2XbXbQ+nIQeKvNorX0KlUqoVEKlEiqVUKmESiVUKrmLU71N914OJqDwNFs/wNwueCuGEFg4MzrGP70u52AiFaoZ8d2o42AnhhDFkcojsx7uYwgxODDaObMO7ruFCn/T3s3BBBSQ2f5i1MFdDCEe+IGLqoc+hhALD+RO1a86ebacg4niYMY7s+61x84t52BictRZ7SH4XQwhNg+vsvQDb9O9l8MXUKmESiVUKqFSCZVKqFRCpRIqdbTjB0V+95WFz+DbAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="HelicalAgitator" GraphicalStyleName="ISO Agitator - Helical">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACuSURBVFhH7c7RCoMwEERR//+nU324EJYbHa2kUFI4VGbEna219lMazqThTBqm9t/+511Kw9QasAasAWvAfw84Po7a4axLaVgxBH3O81MaXmEIan+HhimOMwT0CQ1To2MMQe17GqZGH+cwat/TMMXHOQT6hIZXvjlYaViNDvbPT2l44NjZkbMupSEYAOtrdpeGIwzp1Xfu0jD1xhgNn3oySMO3JCM0nEnDmTScp20f4s5dPthKTkcAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ImpellerAgitator" GraphicalStyleName="ISO Agitator - Impeller">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABzSURBVFhH7Y5BCoBADMT2/5+u20NBJNJBpHoYIShZl8mKiE9BOQnKSVCq7Ge/+EwFpYoDHOAABzjAAQ5wgAN+FZDfZ8p3oFSpIRpMR/4KShVlpD0nmXQXE+WfDpRFDtDInX8Cyis1+OZwgXISlJOgnCPWAa4ooPrbtbmWAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PaddleAgitator" GraphicalStyleName="ISO Agitator - Paddle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABZSURBVFhH7Y5BCgAgDMP8/6fnvIkU3EErQoQgRCxpEfEUKZ1I6UTKKnny0m9VpKxCAAEEXA0Y46dYt2ekHOw+ViGAAAIIIIAAAv4OOMW6PSOlEymdSOkjWgeLTllCnLVdhgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PropellerAgitator" GraphicalStyleName="ISO Agitator - Propeller">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACKSURBVFhH7Y4xDsAgDAP5/6dTPFhCkQN0aLoY6QS5EPCIiF+RshMpO5Hylrnmpnu3SHmLAziAAziAAziAAziAA3weAB/sPjkFOPWBlGAdxpnQ0eearI5nhZSgGoSvyHdB5YmUYDeIXibfIbsekBLkQdRk9aTq5zojJeGDp0cyb+ak7ETKTqTsI8YD5T53JNBrRAEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="StaticMixer" GraphicalStyleName="ISO Mixer - Static">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADOSURBVFhHxY1RDoUgEAO9/6V5YN4K1hZWTerHJKUd3a2U8im0dEJLJ7R0QksntHRCSyc91Ogibu53jwBDoHrkqSeHQPWMjIuOHEZm20jGQ0cOyGoP7v5HDshqH5m5uMmBkXEaMw83OSjeetjLQZH1GszFTg6qY9zx0D2NkdlbkfUazUX/NLK8IuuGh34Pw4CS4omH3/TwH1BQZL3G6OJ3PdSI44ysi97lfYQacVS88bA7DS7i5n53fHwBLZ3Q0gktndDSCS2d0NIJLX2U7QcneQOYQvyvqAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TurbineAgitator" GraphicalStyleName="ISO Agitator - Turbine">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhH7Y7RCoAwDAP9/5+e5kEo40oDan3p4Bg5Wcyx1voVlJ2g7ASly3Wui7+5oHSZATNgBsyAGTADZsDnA/SDp+ydOygFPd5dlTMXQSmcsipnLoJSOGVVzlwEpXDKqpy5CErhlFU5cxGUwimrcuYiKIVTVuXMRVAKp6zKmYugvNHjN9h7Iyg7QdkJyj7WcQJqaz9clj9WpQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Pumps">
+      <Class name="CentrifugalPump" GraphicalStyleName="ISO Pump - Centrifugal">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVFhHxY4BEoMwCAT7/0+nxik1OZeEKKOd2QrLgX5KKa+C8klQjth+9Q/RbASUhL7EenLWR0DZQket16dRe3UeKA060jqvHjkFZSVycNZ7roVl8NAdZ5zFwoEV72ZPQoLeYmVl5mX7JrhkrM4p3zdNgMLKaobyRzEJEldyunMUv4EGRlzJ6s5RbKUOZ1zJ6043tDpKxo47iJCx4w4iZOy4gwgZO/9ibxYPZuT75u0P2MXC0YzsWbz9AbsMHs7IoaxEjmdkUBrT5ZvzCsqWesQ7NPLeTEFJ0FHq1c1AOcJeQmg2AsonQfkkKJ+jfL5OKgOYvuFUgQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DiaphragmPump" GraphicalStyleName="ISO Pump - Diaphragm">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD1SURBVFhHxY6NEsMgCIP7/i/tam9MjAHxp2533woxBK6U0l+h4kmo6HH/8h8FvRGoyMAlUqOm+whU1LDQSI+aBRUFFmIFj3g1VMzMBE7NUHEiSBidbYWF5cJIRiuA0RrsEc2pm03LhUhe3SgDM8/QyyzFC8sFL7sU3wc07MLKL8Vd4uNu2I7qUeo3cQ94+wi2o3rU391Y+aVQD2haxcv+FU8DRjSPghksr26YAUIiWDNUawRjWdaj4GzG1BvBMK4SPuARNx/h5VExs+uIXg4VhdUjIvNU1OSQ0UNGZqjIiIRGPAgVPWQJA70RqHgSKp6EiudI1wfF9AOY+BcV5QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GearPump" GraphicalStyleName="ISO Pump - Gear Pump">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEHSURBVFhHxY4BDsMgDAP7/0+zUc1rMA4JtGOTbiIXY3qUUv6KlDuRcsT7V/8knM0gpYIfwZmdnTNIaVGlmZmdh5RAlXjFM1mLlJWVwqU7Ui4Ugdm7vbjxOJjp6AUFvYsR2Z52eOhxkOlrBxNQ4RWizuvwg8fBqPs6fBYcgLPwvhJl4Hh3HYKL7ODt2eI59s0S55ED2GUyI+cuPGdZ2bPzF0F5ZSXTzd9DEFSsZLq5GYIwM7tX+XYQF9SlCvxozzuVbYZTqNCnzDKzR4ZdpRdO8C7pDzjlwx8x6pOy8tRHRD1SgrsfkbkvpaWWzH7IzB0pFZnSTIaRcgQeUXA2g5Q7kXInUu6jHC82iNmz/YURgAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GeneralPump" GraphicalStyleName="ISO Pump - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVFhH7Y5ZDsMgDAVz/0vTENUCzACGsPSjlaayJ+bZl3PuKCh3grLG/fN/iJ61gJLQS6TWLu4toIyhUEuvXQmUAoWUgntmY1B6RgKH3qAcCBJ63+bixXKhJyMXarD0sIU1J20mLRcseWkTDdDwCK3MUCxYLtSyQ/H9oAdmUcoPxV3qj7OhHclHqVfyP+B3D3iaxUdQftqcPuARi44o5ebi9AGPnHxELQ+lZ9YRrRyUwtsjLO9RxviQ3kN63qAkLKGWGQ3KGrKE0LMWUO4E5U5Q7sNdHy4TNWYNQBl3AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="HelicalRotorPump" GraphicalStyleName="ISO Pump - Helical Rotor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAECSURBVFhHxY4BDoUgDEO9/6X5zvzpqAU6NGjyzFbawlZK+RQqroSKPfbPfhT0KlCRgZf4jFrcFagYYaXKjloLKjqspFWc8UaoaMwUTmWoOFHkZLN34cHlTqbjLoCxFRyh9tTLS5c7Sl+9BAMzR+x85DGih/mvYWCMjM6R6MfsNfwP0MBQPIhnMHsN+4iHLVQfwu6oDn1WcP9s7tzPIVkUyWTR2zzIkMmit3mQIZNF7zkcS/IR5s9kmLdexDLzqd4Iy1TLIQjFigdpZe7C1w84xJcf0fNS0chc0GPUQ0Xn6SOUPBUjVpJ9SCZDRYZSqngQKvbwSxjoVaDiSqi4Eiquo2w/8XkTiPq/ubAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="LiquidJetPump" GraphicalStyleName="ISO Pump - Liquid Jet">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEBSURBVFhHxY4BDsMwCAP3/09nTTRa6toBMimddBMY2+mntfYqVNwJFWccv/5HQW8GKjLwEZtR83sGKnpYaWZHTUFFg5Wo4orXQ8XOSuFShooLRUY1+xT+eNyodDwFMPZdhRUsozruiwihHqFyuA/ttjgDmnFXzHJ4G9o5REaiMaIs3q/hd0CDoXQkyuP9Go4Rj57ZzRN14P12tFkReVY65IEReVY65IEReVY65IEReVY6zmEsk4LZzVPtuC9vf8AQRIHSkWr+Kbz9AUMEsworKnkqdnxoVsCoZKlo9HBUoMhmqejJFnkqGSoyMqUZD0LFGfYIA70ZqLgTKu6Eivtony86y/GbxXitxAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PositiveDisplacementPump" GraphicalStyleName="ISO Pump - Positive Displacement">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADySURBVFhHxY4BDoQwCAT9/6d71hxni0Oh6FWTMbAsS7dSyquguBIUR+xf/SHaGwFFQh+RWmttHwHFFgqN9FqzQFGgECt4xtuCYiUTmNpBMREkzO5ehRvHhZmMq6CM1qJHNKdvHjouRPL6pjGQOYOXeRZ/OC6Mss/iO9CGp7Dyz2Iv9fBp6EY3lNpCAkboHY32mAPC82QyzAHheTIZ5oDwPJmMX3E0Nw9k5n3z9gMOYRAymlUyu1fh7QccomVOPmC0h2KFlqrmQTtaa0FR8JY9IvsottSQ2YfM7KBIREIjHg2KI+QIob0RUFwJiitBcR1l+wCUHPGb/2UGxQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ReciprocatingPump" GraphicalStyleName="ISO Pump - Reciprocating">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADrSURBVFhHxY4BDoQgDAT9/6c5MUeEdYotIpqMabfbpVtK6VNQXAmKPfYv/xD1ekCR0EdKrVrde0CxhkI9vWoWKBYoxAqOeGtQzIwEDu2gOBBUiO5ehQePFyIZV0GM1mImMrO8beNcKkTn5G+bykBmJeoh/1ncGIkRn+6cxX+ghh4jXt05i73U4R0jft1phqX2MmPHHHiYsWMOiOzpoX5CfebgLcwDjublIyi/bb4+4BBeOsLKvQpfH3CIk4/o5aGYmXXEXQ6KhadHePZRrMkh0UMiOygSnlCPR0GxR3mEUK8HFFeC4kpQXEfafoTpFYbxKXpHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ScrewPump" GraphicalStyleName="ISO Pump - Screw">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEESURBVFhHxY6BEsMgCEP7/z/tqjcUMWiwndvd20ESYq+U0l+B4kmgOOP+5T+IzTJAEWEfkdlqemeAogaVMrvVPKAooBKvOJLVQDGzU7h1A8WNIiF6OwoPHhciHaNggt5hJuJ52X4hjzLiMRlvL1q3qAAKC9ZjsyjXhkVQ8Dz2xuba8DVsQDPzMsytzbThHq2pmXmaVYf1O1NmljduXGOF5Hfv6l6HQNFQ8uS2DmSJl9u9r0NZFiW/8PtlUjDzNNGObikCCpGPC5GOUQg+xkJ/QBFf/ohZHxQzb33EqgeKwtOPYO6hqMkl0Q+J3EARwZQyGQsUZ8gjCJtlgOJJoHgSKJ4jXR/swAWWuqhTSgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Tanks">
+      <Class name="Bag" GraphicalStyleName="ISO Tank - Bag">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACKSURBVFhH7Y5LDsAgCAW9/6VtXZAYMijYBLugyfQzFt5rvferoMwEJfFe4+ZCz65AaaGX7749oFwxh1jvEVDukDD9PAGlhxEq6LMIKD1cKWCFWt4DSsK7PFoCpSa8NPA/yplouOCdQymchgueeZRCFagCVaAKVIEqUAV+UeAreqcGZSYoM0GZR28PLOFHVD+1WAQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ConicalHeadsVessel" GraphicalStyleName="ISO Vessel - Conical Heads">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABwSURBVFhH7Y7BCsAgDMX8/5/u5kAoJWjrobu8QXaI2maY2a+g7ARlhvebv494VgEl4RfGpbuzEyg9V0ML91F6qssX2XcoPQpQgAIUoAAFKEABClDAHFSNqLxBSayhNHx3dgJlhtuFEZSdoOwEZR82HoWvZzQSmGJtAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Container" GraphicalStyleName="ISO Container">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVFhHzc7RDoMgAENR//+n2TCpQHNBo0n14SSs7cCtlPIqDJMwTMIwCcMkDJMwTMIwCcOkdvgfU/Tm/u5x6AofPbW6ux2+8AFE/R1+lwyb42CF6E+z3p3tPZ8WpG7kSk58My3O1L14t+L7aUHqRq7kxDfTQmou3pGzvedDQdTf4XfJsDkOXeGjp1Z3t8MXPiBFb+7v9j/egGEShkkYJmGYhGEShkkYJmGYhGFO2X7+7O+dKtrsSQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DishedHeadsVessel" GraphicalStyleName="ISO Vessel - Dished Heads">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABoSURBVFhH7Y9BCsAgEAP9/6e33UMhhCAplC1IhPEwLjquqvoVKSeRcse9epPwrIOUjPuIO4dI+QVuhJTIm98gCUhAAhKQgAQkIAEJSMA5AU1f9sBniDuHSLkDH2F41kHKSaScRMo5al31P2c0SkUlRQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FixedBedColumn" GraphicalStyleName="ISO Column - Fixed Bed">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhH7Y5BCoQwEAT9/6ezNhgIQ8We6JC9KJSHSqrJ0Vr7Kyh3glKcn34lxO0RlMKFWb4HvHpAFXF7BKXIxI7MBkrRQzcwI9ujFGPoRiIrLUoRQzfUWe1QCgrt2JOGpJiFVb6DUtyF8WzlbgSlsOF1nr03A6Vwoai4g1LY8DrP3puBUtyF8WzlbgSlmIVVvoNSUGjHnjQkRQzdUGe1QynG0I1EVlqUooduYEa2RykUutiR2UApelxB3B5BKVyY5XvAqwdUEbdHUO4E5U5Q7qMdP7dav83qiubfAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FloatingRoofTank" GraphicalStyleName="ISO Tank - Floating Roof">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVFhH7c5BCoAwDADB/v/TESolRbY3u+0hh8G4iEmLiKMwmjCaMJowmjCaMJowmjCacujj+9xl3jPksPjgL6v/57Bp8VcdUAfUAXXA3QdYxs6+d345AaMJowmjCaMJowmjCaMJowmjJ9oDum1dPvmMhP0AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FluidizedBedColumn" GraphicalStyleName="ISO Column - Fluidized Bed">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABjSURBVFhH7c5BCgAxCEPR3v/SttmJBBQUu8nAm0Wg8o+ZfUXHTXSE9+E3It726AjZwyoFtAKmxNseHSF7WKUABShAAQpQgAIU0AqYEm97dITsYZUCWgFT4m2PjpvouImOe+xcWc4BmmPp/k8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FullTubeCoilVessel" GraphicalStyleName="ISO Vessel - Full Tube Coil">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVFhH7Y4BDoUgDEO9/6X5zHxC2UqG0wCJmjylpas7UkpLoeZMqCnkR16PoLsRagre4CjfAtss0OszRqE3cBXpKV2ssxEIC0fQPUajQHQwivnhygVYZyuyRPAuitdXDyrQG7iK11MPr1/gFFkieBfF62wEwsIRdI/RKBAdjGJ+uP0CEijouwjYxzpbAQEWjuD11IMKeoOjeD31sHqBU/zD8vUGR/F6rAFLFO8OXg81hW+BLRZ4Ct2NUHMm1JwJNeeRjh9ZzgGahGvRWwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="GasCylinder" GraphicalStyleName="ISO Gas Cylinder">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVFhH7Y5RCsAgDMV2/0t3czAQibU6qH48IQoRbS4z2wrKTFBGeFbZXtq7GVCOaIf+iUA5YmtAb9hqBEqPYwLK+VH7WVB61EM9FwVlj9GQlQiURPTz2QiUhAIUoAAFKEABClDAEQFR2rceKDNBmQnKPOy6ASfwazCFlws8AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GeneralBasin" GraphicalStyleName="ISO Basin - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABpSURBVFhH7c4xCsAwDMXQ3P/SbrM5QRAIRV3+8AYrrfGoql9hNGE0YTRhNGE0YTRhNGE0rcM7dv3t1mnnMnT08Y3THoxTDsgBOSAH5ID541f23R1GE0YTRhNGE0YTRhNGE0YTRhNGT40HDkSTCMY86jQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralColumn" GraphicalStyleName="ISO Column - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABjSURBVFhH7c5BCgAxCEPR3v/SttmJBBQUu8nAm0Wg8o+ZfUXHTXSE9+E3It726AjZwyoFtAKmxNseHSF7WKUABShAAQpQgAIU0AqYEm97dITsYZUCWgFT4m2PjpvouImOe+xcWc4BmmPp/k8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralColumnWithTrays" GraphicalStyleName="ISO Coulmn With Trays">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVFhH7c5BCgAxCEPR3v/SttmJBBQqlkIG3iwClb/M7Ck6TqIjnA+/FvG2R0fIHlYp4CqgS7zt0RGyh1UKUIAC/g7oEm97dITsYZUCFKCAvwO6xNseHSF7WKWAq4Au8bZHx0l0nETHObY2PHDfrRtpPJcAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GeneralVessel" GraphicalStyleName="ISO Vessel - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVFhH7c4xCgAgDATB/P/T0RSChAOFSGxWWIsDZczdvybHzuS4mieucvnfPTlGp4e3AQAAAAAAAAAAAAAAAEAJ8Kr8954cO5NjZ3Lsy20AgkJHVIAxpiEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="JacketedVessel" GraphicalStyleName="ISO Vessel - Jacketed">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABzSURBVFhH7Y5BCsAwCATz/0/bCBWCbrCGYC9bmB6mdZkhIr8CZSdQKvPR1xX89gqUSnb4lXKAHhj+2wnZXhTvj7uDKtleFAxgAAMYwAAGMIABDGDAVIb/dkK2F4SxO6iS7UCp6OEt/PYKlJ1A2QmUfch4ANS44asm9HXQAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SemiTubeVessel" GraphicalStyleName="ISO Vessel - Semi Tube">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACqSURBVFhH7Y4BCsAgDMT2/087T1YQe7UWxMJwkAmBC31KKalQeRIqQf3w28LY7qESeMNV7gH3AHRmLSrBzgP6d0QJwRpEkY7VU0KwBlHQmbW4dEYRvI4W38AbruJ1tMg+oMmqUw8Avzpg1qIS7Dygf0eUEKxBFOlYPSUEaxAFnVmLS2cUweto8Q284SpeR4vsA5qsOvUAcA+4B2C4i7HdQ+VJqDwJlecozwsPgyV2qxFHewAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SphericalVessel" GraphicalStyleName="ISO Vessel - Sperical">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVFhH7Y5bDoQwDAO5/6ULkYjEOjZpULfwUaThMSSut9baq1A5EyozjstuP+BML1QyssOy/woqkXJoYZ5Kx4Kqhzu9u1QaTw9GshwqjVcLjDrcucvjcnABQ2VG8YfDjVVgFVgFVoFSgdEl7jKjOAfVQpUsL4ovFVBLvVwzVFYUsGBPf+/luoNPJAqxYN/oEDbj3+idKLKFwytw1nAv/weRLFTJ8qL4QgE1/ATPU5lBzIbKmVA5j7btF8wrcOy/vc8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BarrelDrum" GraphicalStyleName="ISO Barrel Drum">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABtSURBVFhH7c7RCsAgDENR//+nu/VNLhEpSDe2CMeHUEJGRDxKhp1kSPfLr4QdKzKkSmH6xoAsOYXdMxnSroQq9zIkD/AAD/AAD/AAD/CAfw7IklPYPZMh7Uqoci9DesWAKnasyLCTDDvJsE+MC32XGYL+AF4OAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="NuclearReactors" />
+   <BaseClass name="EnergySymbols" />
+   <BaseClass name="HandValves">
+      <Class name="AngleBallValve" GraphicalStyleName="ISO Angle Ball Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVFhHxY5RDoMwDEO5/6U7eVoVCE5sGKIfT5jYTrqNMZZCh28S4ivPAQd0MzlTEeJOucl33p4Qu7BTVv5E7QpBQlWZzRRVJ0SzFN70u5yCdUMYi5FxchWsG8J8QJ5dgfVDvPAAkHeUBsPJKPKO0mA4GUXeURoMJ6PIO0qD4WQUeUdpMJxMB+uHEMvhT7LnwrohisWYZ6/KdlSdEORIWWo8RpcN8Qvh2xX2qJyzK4QRzsxOR+5k6NDFOiAydOjgHAfLHwC6LB0qrhwHyx8Aqs5poLhzHCx/AGDdw4/in+PgkQc8wWHn/mcFdPgmdPgeY/sAtOADmCtg6ecAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="AngleGlobeValve" GraphicalStyleName="ISO Angle Globe Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHxY5ZEsMgDENz/0vTqlNGJDFYbObjTYRiW7pSSkcxzUgofvI9sBuKr8xkLwKKIjiyCIURGFGEohG0swiFELCjCEXH4ZVFKAYOrihCMXFopgjFRAEwWoJisEAZXGoVit7FR1jWpadAIS5izpotPet/DQpnCf9rM0+/NmdB0TjuHbT+ezsZiscC3sqR2oyyCyj+C/iqy6A1q9yh6AwG3rxyzzRVpACvpGUqKOHgeAHQmjVNj55wcLwAqO28DI+RcHC8ALB2bw+PmXCwpMAKbjfLxwlMMxLTjCNdH5oPK3D2iy9UAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="AngleValve" GraphicalStyleName="ISO Angle Valve - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHxY5ZEsMgDENz/0vTqlNGJDFYbObjTYRiW7pSSkcxzUgofvI9sBuKr8xkLwKKIjiyCIURGFGEohG0swiFELCjCEXH4ZVFKAYOrihCMXFopgjFRAEwWoJisEAZXGoVit7FR1jWpadAIS5izpotPet/DQpnCf9rM0+/NmdB0TjuHbT+ezsZiscC3sqR2oyyCyj+C/iqy6A1q9yh6AwG3rxyzzRVpACvpGUqKOHgeAHQmjVNj55wcLwAqO28DI+RcHC8ALB2bw+PmXCwpMAKbjfLxwlMMxLTjCNdH5oPK3D2iy9UAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BallValve" GraphicalStyleName="ISO Ball Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADHSURBVFhHxYxBDsQwDAL7/0+nG6kkXgqWcqGHUZwB+xpjfIqUSaRMImUSKZNImUTKJFImkTLJHn7jBH8HegruMqr3F+LlEnAedHvIuLMHDsoS/pg7eIf3Xv81UACmd5mj22Fvg0qXKU5u2aDSZYqTWzaodJni5JYNKl2mOLllg0qXKU5u2QBM7zJHt8PeB3SEcwfv8N7rv4YnmC+XgPOg20PGnT2UUgd6Cu4yqreGr5AyiZRJpEwiZRIpk0iZRMokUiaRMse4bsUpSVJ7lP6SAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BreatherValve" GraphicalStyleName="ISO Breather Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC9SURBVFhHxY5RDoQgEEO9/6XZrVkSap4Iit2Pl9DS6cxWSvkraCZBMwmaSdBMgmYSNJOgmQTNJC6+8m3afftOE53gCqjXRRPQmwaeQH0uKLDwEOw30Vmkv97/CDTvYmCBMiM5guZcTBQrO5MXlHcxWSg0MzpHORc3Dqho9mqe/l08OKCijrMe8l0sOKCirmMf9btYeEBFnbWX+l38wm/S7tt3Ho00aCZBMwmaSdBMgmYSNJOgmQTNJGjmKNsHqvY5Yk7ro9IAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ButterflyValve" GraphicalStyleName="ISO Butterfly Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVFhHxY7RDoMwDAP5/5/uFkRhMjZljB0PJ4Vz6jC11h7FShIrSawksZLEShIrSawksZJkG94jRb85312HJXBLd6LdOfjTj+zurEM4Vj5lV9CuGCiVj3bOoB0xSNTe2V2Hvo3BiNrvaHaE7sfgG+rt2fe6F4MrVMeoR/MY/EJ1pT71MbiD6twdJH+gU929X+9sw7JE0G/Odz8/nsBKEitJrCSxksRKEitJrCSxksRKjja9AAkYL2zCKn+gAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CheckValve" GraphicalStyleName="ISO Check Valve - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADPSURBVFhHxY5RDsMgDEN7/0uzxVIisDxEO3A/nmSbxORqrb2KDJ3I0IkMncjQiQydyNCJDJ3I0MloYMeB04zma5M+3wl3l4DpHkPz8A64swSM+DAylT+Fu0rATD6Kt9n7KtxRAmbhg5hZmfsF75aAuVEcs3fmE94pAfOw8M4ez5aAeXBAErsr+zxTAuaPA5LomPXwWwmYDQck0aX6OCsBs/GAJDr7Xv6jBMyBA5LoToZ8MAcPSKYHvIEMncjQiQydyNCJDJ3I0IkMncjQR7s+IYOPDCW486gAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ContinuouslyOperatedValve" GraphicalStyleName="Continuously Operated Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADtSURBVFhHxY3RFsMgDEL7/z/txs7UNEK0tsse7ikFJEcp5a9QMxNqZkLNTKiZSRcfORZ+TRdvWanek6j9U8FqX9zFb/ndLshBeMxfQb31ngwsyKLcMuv6TAYMdFQvyiy+I4MIdGvf6hV8VwYz0K/4LML3ZaBAbxghnmJ428RkAPlTndN/E+IhfJUpojfe10EwsgrbGP6b+Ab4Wo3vLnbHanwrXZiShXkrqC3vNxHBxiKu9KnJWB29chxQUzEbv3ocUDNCHdk5Dqg5wx/bPQ6ouUI9euc4oOYqd48DamZCzUyomQk1M6FmJtTMoxwvlr07YDYEN5UAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GateValve" GraphicalStyleName="ISO Gate Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVFhHxY1JDsMwDAPz/0+7FVA5LkV6KVDmMDDFJblaa49CTSfUdEJNJ9R0Qk0n1HRCTSfUdHKLtwzy3uGXPm6+wnyxpDjpZRc3t8BgGCl2cuyUuwvxsfBnGXrByUYGSORlTG70kLLpYjFMopfd8U29AnsyWBH9BLMZ2JeBInrZHd/UK7AnAyTyMiY3ekjZdCGG4c8y9IKTjQ4mH0l2cuyUu4tPEC+WFCe97OLmFkPpX7B/dPEU1HRCTSfUdEJNJ9R0Qk0n1HRCTSfU9NGuF+96TU6n2mx+AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GlobeValve" GraphicalStyleName="ISO Globe Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHxY3RDoQwCAT9/5/uHcmVVhiqOXV9mEhnYd1aa6+CUglKJSiVoFSCUglKJSiVoFQyhu9o9PcT0D92Yf/GpavMnbF7DDGYjv6FOtLbh+Jn5qusYnUTfRlELL9rZ/f24eCwY3upBFxFuvXhZEHH9jsxWxH3y6DC9lIJuIp068NBgeV37ezePhSH5qusYnUTfR0sSs5CHentwy+wb1y6ytwZu8cwLT0F/cOHt0CpBKUSlEpQKkGpBKUSlEpQKkGpo20fgUljOP6HM3UAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="LiftCheckValve" GraphicalStyleName="ISO Lift Check Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVFhHxY5RDoMwDEO5/6ULmcAE47RUbN7Hk9wXN+3SWvsrUjqR0omUTqR0IqUTKZ1I6eR62I5Bdr/mDPvj7k+cwfABtfd6SI/n/Ja8i3ciQHAhXZ5F3b2d8+EjisfCVzOm12WPADF4JOZHJ2d1VvAcAWKw4CB6DHcU3EOAmFiU4XkFdxEgHiyLTgV3Ge4gQHSWxKw3D0YdniFAiMvhlO9R3WGHAJEKkfnCLLyD9yFA7Be4+JZqLwLElx9mhh9wI6UTKZ1I6URKJ1I6kdKJlE6k9NGWFXhXSVLyNODzAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SwingCheckValve" GraphicalStyleName="ISO Swing Check Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADRSURBVFhHxY5RDsMgDEN7/0uzxVIisDwEHXU/nmSb4ORqrb2KDJ3I0IkMncjQiQydyNCJDJ3I0MlovvZp+n3YOZjJ4Cm4uwRM9xiah0/AnSVgxMLIVH4X7ioBM1kUb7P3VbijBMzCgphZmfsF/y0Bs1EcszvzCf8pAXOzcOcfz5aAuXFAEn9X/vNMCZg/DkiiY9bDbyVgDhyQRJfq46wEzMEDkujse3lHCZgHDkiiOxnywXRDTzLs7M0byNCJDJ3I0IkMncjQiQydyNCJDH206wNq1y9sYC0KxwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ThreeWayBallValve" GraphicalStyleName="ISO Three Way Ball Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVFhHzY5RDoNQCAR7/0vb2BTFdRYlabAfk+LOQt9rWZZHwXASDCfBcBIMJ9mHz3guONZ+oK5C+wcRREZQhzIlOto7FPKsxcg1y7idnGtnHy6WyRO5TzuaWZGpHNG5ZUWmckTnlhWZyhGdW1ZkKkd0blmRqRzRuWVFpnJE55YVwZo756h2NPdCjqh36I7unb634SvWXy0Fv3Da2YdUqogeoV2Fettwh6s/ufIEho5HH3D3ePcRGBKPPqB9tNHHUPmLB3TRGw4MJ8FwEgwnwXASDCfBcI7l9QY1Mw+M7s1WMQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ThreeWayGlobeValve" GraphicalStyleName="ISO Three Way Globe Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHzY5RDsMgDEN7/0szZVJKamwCXZXu46nBfqQcrbVXoWElNKyEhpXQsJI+fMdReBr8z6VwPHsStf8ixBnFu+Au3NsH8kPLWL6CuouZLCLWzfpI5mInC4Y5ypt1EXRkMcNc9+O8ArqyyDDfwW4G+rJQmOewcwZ6skCsj47PmMUzA3tZOJYPlxbOmDmDew6/LJl4mTsU9kUporrsjvfo9SFIM5Szehe9c1gh+0nWM2ioePUBq8t3H0FDxqsP2F664dMQ+YsH7II7FDSshIaV0LASGlZCw0poWEc7Pu8bEYoyUtk9AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ThreeWayValve" GraphicalStyleName="ISO Three Way Valve - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHzY5RDsMgDEN7/0szZVJKamwCXZXu46nBfqQcrbVXoWElNKyEhpXQsJI+fMdReBr8z6VwPHsStf8ixBnFu+Au3NsH8kPLWL6CuouZLCLWzfpI5mInC4Y5ypt1EXRkMcNc9+O8ArqyyDDfwW4G+rJQmOewcwZ6skCsj47PmMUzA3tZOJYPlxbOmDmDew6/LJl4mTsU9kUporrsjvfo9SFIM5Szehe9c1gh+0nWM2ioePUBq8t3H0FDxqsP2F664dMQ+YsH7II7FDSshIaV0LASGlZCw0poWEc7Pu8bEYoyUtk9AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ValveGeneral" GraphicalStyleName="ISO Valve - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHxY3RDoQwCAT9/5/uHcmVVhiqOXV9mEhnYd1aa6+CUglKJSiVoFSCUglKJSiVoFQyhu9o9PcT0D92Yf/GpavMnbF7DDGYjv6FOtLbh+Jn5qusYnUTfRlELL9rZ/f24eCwY3upBFxFuvXhZEHH9jsxWxH3y6DC9lIJuIp068NBgeV37ezePhSH5qusYnUTfR0sSs5CHentwy+wb1y6ytwZu8cwLT0F/cOHt0CpBKUSlEpQKkGpBKUSlEpQKkGpo20fgUljOP6HM3UAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipingFittings">
+      <Class name="Blank" GraphicalStyleName="ISO Blank">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7Y4xDsAgDMT4/6fTplIX5JQAVVgOyQzOcG5mdhSUlaDMcD//HvrbDCi/oFFyWVBGjEZWIlBGKEABTjSyMu6gHNGPrY47KDP46Et/mwFllt1xB2UWBShAAQpQgAIUcDzgD1BWgrISlHVYuwCRn6T2MSY+KQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="BlindDisk" GraphicalStyleName="ISO Blind Disk">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVFhH7c6xCQAxDMXQ7L+0LwOocHEojQKPgNz8MzNPYTRhNGE0YTRhNGE0YTRhNGHcuu9+fNvCuNWABjSgAQ1oQAMa0IA/YDRhNGH0zPkA3j7OzFSS/JMAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Coupling" GraphicalStyleName="ISO Coupling - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABZSURBVFhH7c7BCgAQFERR///TD1vNIItHuepYTMotEXGVHDPJ0WmnX9b4foccndNPZuToEPB8wEmgHB0CCCCAAAIIIICAFQL+COifzIzvV+SYSY6Z5JgnSgVuCIEaIMUt9AAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Flange" GraphicalStyleName="ISO Flanged Connection - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABJSURBVFhH7c4xCgAgDATB/P/TMXXYxsKzWWERToup7v4ajslwTIbjbs5c/Ebd/MdxJ0CAAAECBAgQIECAAAEvwzEZjslwzNV1ADCTkQpt+Z/wAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="HoseConnection" GraphicalStyleName="ISO Hose">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVFhHxcxBDoAgDABB/v/pKgcUmlXUmOUwCWwLJSKWwmjCaMJowmjCaMJowmjCaMJowmjCaMJoGi/7tel7b7Yzm2fnIT2gD97u0DzDWD16/MMOxqZ/TB/l9mXnOFypD5o8q2bz6m5nuKyA0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0RNlA03xsugUG4UZAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="MixingNozzleInjector" GraphicalStyleName="ISO Mixer Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVFhHxcvBDsMwDALQ/v9PZ/PBmWNBRKaIHp7qQnjGGK+CoRMMnWDoBEMnGDrB0AmGTjB0+h3f8x+539ltlkd5q9gm8qp3y/88WqHITXyr7JHe00IRm9Ndf08LxY0NLRQ3NrRQ3NjQQnFjQwvFjQ0tFLE53fX3tFDkJr5V9kjvaaFgm8ir3i3/8yiDE7nf2W3m8RYYOsHQCYZOMHSCoRMMnWDoBEMnGPqM5wMs4UdUkePh0QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="OrificePlate" GraphicalStyleName="ISO Orifice Plate">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7Y4xDsAgDMT4/6fTplIX5JQAVVgOyQzOcG5mdhSUlaDMcD//HvrbDCi/oFFyWVBGjEZWIlBGKEABTjSyMu6gHNGPrY47KDP46Et/mwFllt1xB2UWBShAAQpQgAIUcDzgD1BWgrISlHVYuwCRn6T2MSY+KQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SightGlass" GraphicalStyleName="ISO Sight Glass">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACjSURBVFhHxc3RCoQwEENR//+nuyJ0HcvNlPgQHw7URDLHGONTGCZhmIRhEoZJGCZhmIRhEoZJ9+N8psyb193/YynI7p83G7JY7frJ3ZFF1XXE2ZJF1XXE2ZJF1XXE2ZJF1XXE2ZJF1XXE2ZJF1XXE2ZJF1XXE2ZLFatdP7o4syO6fNxuPImXevO7Wjy9gmIRhEoZJGCZhmIRhEoZJGCZhmDOOH6FgMWpTlMy2AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SpectacleBlind" GraphicalStyleName="ISO Spectacle Blind">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABzSURBVFhH7dNBCoQwEETR3P/SrRECEr4xJlK9qYE3yHfRtbFERCqMShhnnL/6d+nffYHxTX90ZwTGkadjqyMwjnhA+oCqHmsH788rMM7aOdxgVMKohFEJoxJGJYyz0r8CD/AAD/AAD/CAP2BUwqiEUSfKARq9tuRCUiWwAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Strainer" GraphicalStyleName="ISO Strainer">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVFhH7Y5BCsQwDAP7/09n60NgEWPXOiS5ZGG2MBGynjHGUVDuBKXy/uLPQjsyUCpOYbBkgFV6B6wY8P/9opsLUCqzsFvczQUoFacwuAO2DKiOVG8KSoUKqyPVm4JSyQpdT6BU3EOZJ1Aq7qHMEyiVqpDeqryCUqkK6a3KKygVpzC4A44NmLluPkCpdAtnrpsPUCpW4Zu9A44OCJYMcNGODJQ7QbkTlPsYzw+a9TtgXKhStAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipingSpecialtyItems">
+      <Class name="Compensator" GraphicalStyleName="ISO Compensator - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhH7Y5BCsAgDAT9/6ete/Aik5oomEsKQ2FastN676mgfAlKL+MZL/7mBaWHOX4bgXLHOnoTgfIPa+w0AqXFbuQkAqVFaoD3eDQCJZEaED4a+B/lSgVUQAVUQAUI79HIuEBJpAeI3fHouEBpkR4grJGTcYFyxzp2Oi5QepijN+MCpZfbcYHyJShfgvIdvX3/5Y0Om/FeYAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DetonationProofFlameArrestor" GraphicalStyleName="ISO Detonation Proof Flame Arrestor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVFhHxY4BDoMwDAP5/6c7ghQWPJvWwMqk09jdqLu01l6FyplQOcr6Wb94G4XKEXL87iWo7IGjdy5B5Rlq7OolqFT0Rq5cgkrG6OHuJahE7EON/1NZcceT0feoTK6OJyPvUxncHU9653D50Hhydt6veHg8Uecef/xpPGHnfx/Wx1nk5ra7P0CoqOb6AJsMFdVcH2CToaKa6wNsMlRUc32ATYaKaq4PsB3CLHJz290fIFRUc32ATYaKaq4PsMlQUc31ATYZKqq5PsAmQ0U11wfYZKio5voA2yHMIje33frjDaicCZXzaMsHCWqz2aPexIUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ExplosionProofFlameArrestor" GraphicalStyleName="ISO Explosion Proof Flame Arrestor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVFhH7c4xDsMwDEPR3P/SbmnALkOYA4coHTR8IOEb5GuM8WrHsbLfx/ezqnVz3t0fAk/VD+gH9AP6Af2A/35AVevmvLs/BDhn6Y7ULHDO0h2pWeCcpTtSs8A5S3ekZoFzlu5I7QZVrZvz7v4Q4JylO1KzwDlLd6RmgXOW7kjNAucs3ZGaBc5ZuiM1C5yzdEdqN6hq3Zx3+eeNjmNlx7GucX0ALfGADWCZD0MAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FireResistantDetonationProofFlameArrestor" GraphicalStyleName="ISO Fire-Resistant and Detonation Proof Flame Arrestor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD0SURBVFhHxY0BDoMwDAP5/6cZQQsYY0PTsTLpptQXnGme51eR4UhkeMXyiz8J77YgQwUfyZkzfLcgQ0SVtrw5c8gwUSWuuLKLyDDoKez6RoYdRUn123Pww/Gk0nEOaNF9eEdrz/Hx0PGkpe/4gAW13MNd5z784Xhy1b0PX8ELT+H692EZWT6NunGSI8ib691tIIE4V80DdlYgzlXzgJ0ViHPVPGBnBeJcNQ/YWYE4V80Ddgcxiry53t0GEohz1TxgZwXiXDUP2FmBOFfNA3ZWIM5V84CdFYhz1TxgZwXiXDUP2B3EKPLmehcfbyDDkchwHPP0AahYcB3avFaJAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FireResistantFlameArrestor" GraphicalStyleName="ISO Fire-Resistant Flame Arrestor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADYSURBVFhHzY4BDoMwDAP5/6e7GSkoNTGrN2g36Sa4g5qttbaUUs6klFe8f/gr4WdHKGXFyMjIM0wpM18darxTysAdZkbeLyX4dTz4dE4tbxoPrs47i5vHA3XuWaz8gKfGg+r8/mblBzw9HvCODE/x3x8wi9jcd48LChnVXA+4yZBRzfWAmwwZ1VwPuMmQUc31gJsMGdVcD7h1YRaxue8eFxQyqrkecJMho5rrATcZMqq5HnCTIaOa6wE3GTKquR5wkyGjmusBty7MIjb33XyzglLOpJTzaNsLk+Wf7Y5G39EAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FlameArrestor" GraphicalStyleName="ISO Flame Arrestor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACoSURBVFhHxc0xDsQwEELR3P/S3sWSE4KgmIYUT7L5xVxrrU/ZscmOTXZssmOTHZvs2GTHJjs2PY//s+Xc3HfvhwSW2nQHbTGw1KY7aIuBpTbdQVsMLLXpDtpiYKlNd9D2Ci3n5r57PySw1KY7aIuBpTbdQVsMLLXpDtpiYKlNd9AWA0ttuoO2V2g5N/dd/nzBjk12bLJjkx2b7NhkxyY7NtmxyY496/oB/uzvneDMncAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Funnel" GraphicalStyleName="ISO Funnel">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVFhH7Y5BCoAwDAT9/6djcyhImdqklXhZYRBG253LzH4FZSUoK0HZaU978bcIkfMon+xGRM+hHMlGZP5HSUQvzYw7KGesLs+OOyjfmI3sjDsoV4xju+MOygh99GTcQRnldNxBGUUBClCAAhSgAAUo4AtQVoKyEpR12HUDBn2y6LRaInAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="InLineSilencer" GraphicalStyleName="ISO Silencer">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVFhHxc3RCoBACAXR/v+ntwgqi7miILeHA+Wgu621foVDJxw64dAJh044dHo+jk+X683z3fvjEyomdmSomNiRoWJiR4aKiR0ZKiZ2ZKiY2JGhYmJHhoqJHRkqJnZkiLJGOrdkiLJGOrdkiLJGOrdkiLJGOrdkiLJGOrdkiLJGOrdkiLJGOrdkiLJGOrdeweV683w3/vwBh044dMKhEw6dcOiEQ5+17dp1E4jW4CshAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PipeConduitJacket" GraphicalStyleName="ISO Pipe Conduit Jacket">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABwSURBVFhHxc4xDoAwEAQx/v/pQJMERdNiCkunafauMcavMkoZpYxSRimjlFHKKGWUMkoZpYxSRmkfzynMvbV7Bm0fry+/NPfW7hm0fby+/NLcW7tn0DJKGaWMUkYpo5RRyihllDJKGaWMUkYpozOuG1DdWULiwHGDAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PipeHeatingCooling" GraphicalStyleName="ISO Pipe Heating Cooling">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABuSURBVFhHxc5BDoAgDABB//9p9IIaXK7jYZJmU1KOMcavMkoZpYxSRimjlFHKKGWUMkoZpYxSRimj9AzXKMx79901aM/w+uXO3N1Z98vnzRq0jFJGKaOUUcooZZQyShmljFJGKaOUUcooZXTGcQIKuJz+GhVsPwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PipeHeatingCoolingInsulated" GraphicalStyleName="ISO Pipe Heating Cooling Insulated">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVFhHxY1BCsAwDMP2/093WSHtGjRy0w4CR3XxNcb4FZQmKE1QmqA0QWmC0gSlCUoTlCYoTVCa7BDRIPfW7nGUAn5oOvX+cskOEQ1yb+1WMSUVi+tucthZIWLHu5u53k/uyO7sH0d5JNfd5KiT7BDRIPfWbhU2KE1QmqA0QWmC0gSlCUoTlCYoTVCaoDRB6TGuG4auDY5egBIrAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PipeInsulated" GraphicalStyleName="ISO Pipe Insulated">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACASURBVFhHxc1BCsAwCADB/P/TVgoaIlty2x4GzGJwRcSvMJowmjCaMJowmjCaMJowmjCaMJowmjCa9pCjoe713eMxFvDDZWe+v1rZQ46Gutd3Z3gjLY52e1PDnR5yNNS9vjuDDaMJowmjCaMJowmjCaMJowmjCaMJowmjCaMn1gMtFEFaWPjKpAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Siphon" GraphicalStyleName="ISO Siphon">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVFhH7c7BCoQwFENR//+nO9OFEMrNJDJQNxWOxCDkXWOMV2G5E5ar7zNfaP33KSxb54D1gPl90/4XLFs65HKCZcuNak6wbLlRzQmWLTeqOcGy5UY1J1i23KjmBMuWG9WcYNlyo5oTLFtuVHOCZcuNak6wbLlRzQmWLTeqOcGy5UY1J1i23KjmBMuWG9WcYNmaQ0r7OydY/usccA44BzyB5U5Y7oTlPuP6AMBRazATIcoPAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SteamTrap" GraphicalStyleName="ISO Steam Trap">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE3SURBVFhHxc1bkoMwEEPR7H/TzDRVF4RQm858MKk6wVY//Nm27V/F8E0xXPn91V/kvRMxTCaPTHpcDNWfln4xE0N8+3DhcXjdxbBMhhMeVt6jcvgw1OHBxHtxDxbNT3jMUaNP3YOm8UnNJVqjV10vTdMEj6iU04/rJTRMsFytcnUeQnGK5UiZYm7vOw5WmGIpUuaY3XuPgxWmWMq83h31+uI8WGGiZuB3p/U64zxY4QnLmNO7S/04D1Z4oss4J6leGc6DFVZ0Eeekq1eO47BfrNihr76drl65ul5Cg6Onvp1VvWrqctmD0KRY1Fn1sEPdg6axsKjz1MMedQv2sGuWZW5ST2JYfIhFyaTeiSF0mGVuVSvMd2KofKGa1J/EMEnLPQMzEzFc8ceU907E8E0xfFMM37N9fgAe+Z7gKa3+ngAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="VentCover" GraphicalStyleName="ISO Vent">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVFhH7Y5BCoAwDAT7/0/HeghImdqklXhZYRBG251mZr+CshKUUfrTX/wtCsoIPn4agXLFOHoSgfKN2dhuBMoZq5GdCJRE9PJsBMqR9KWJ/1E+yY470XMond1xJ3IeZZTTwBuUURSgAAUoQAEKUIACvgBlJSgrQVmHtQtgfbDqqWLoKQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Reducers">
+      <Class name="EccentricReducer" GraphicalStyleName="ISO Reducer - Eccentric">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhHxc5ZCsMwEARR3//Scgg0owyFg7yUPx6MSmjZxhivwmjCaMJowmjCaMJowmjCaMJowmjCaPpdfJYx9yfV0B7NR2Leu1MNfx7JR6Lvn1XD4qX5yOq5roYLF+Uj0feP1LB48Eg+En1/VkM79KS8+X13XrwBowmjCaMJowmjCaMJowmjCaMJowmjCaNnbDsN4IkSsmpQbAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Reducer" GraphicalStyleName="ISO Reducer">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVFhHxc5BDoMwEENR7n/pFBZfk1oGEhrcxZMsD2Rma639lS2TbJlkyyRbJtkyyZZJtkyyZVKFPfbo31ZBlnII+tlKFW6WcAh0/lSFyUc5BDofVeGHRw4cAp2fqTDx0wgOgc5R4eKjFThE93x9QF6BZdA5Klx8NIJF0PmZChM/HVgEnY+qcPMIi6DzpyrIoyxCP1upQmihsmWSLZNsmWTLJFsm2TLJlkm2TLJlki1z2vYBegh5IjGR/X0AAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="GeneralInstrumentSymbols">
+      <Class name="AuxiliaryLocAccessibleDCS" GraphicalStyleName="ISO DCS - Local Panel">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADKSURBVFhHzY5REoQwCEO9/6W7244UmyFYR4r9eGNMCuEopXyKaWai4i+zkM7W2wUEiDWMzL4Z/rsgg9VnGcObQZ8GzHvCzE4evCwX7vaaAT56i7dbxRnggyjYfhU7HIBhNFaHG0ZjdQyh6JXsfUAW0tl6u4BgFe4BWUhn6+0CglXsfcDqI6wON4zG6hjC6zcatl/FLgegjsDbrQKDoCPu9tKAeU+Y2UkDofosY3gz6NMAqXnUm+G/i3M4A+lsvdefLzDNTEwzj3L8ACHLaiPovCXHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocAccessibleDiscreteInstrument" GraphicalStyleName="ISO Instrument Local Panel">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHzY6BDoMgDAX9/59mg6RGy1HLpGVLbtET3ntHKWUrKDNBafH91T9En/WAkvCUeM5oUF75KXTiDkphtljjuY+y8rZceMphuahcsPJ6sbhcGOX2YueAqHKB8u8vOwdElwu6Z/ghCnNAFtLZes8H9SEKc0AW0tl6zwf1IYr/HdBegkdQ/v1l94AmgkaMcnuxe0CTi0dYeSgrq0Y85aAU3o7w3Ed5pYbMDpm5g5LwhHrOaFBaSAmhz3pAmQnKTFDmUY4PWc4Bmun7eKQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocAccessiblePLC" GraphicalStyleName="ISO Computer Function - Local Panel">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVFhHxY4BDoUgDEO9/6WRLZmZWAR0oz95P/KUtkcphQqUO4Gypf7kb4k2oweUnpUwz+w9KD3UAV/LjZn7UBrUAX/LjVEOlAJ1QFS58ZaHJXNAdLnRy30K5oCscgPl3w/1mI3v087rAbzMoO25HvRQj9n4Pu28HcAHkQwHqEga0ct9CvYAlcEj3vKwZA8QokaMcqAU6AOEvyNm7kNp0AcIX0fM3oPSQx8gSNgqbUYPKHcC5U6g3Ec5TlnOAZqeHTnmAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FieldMountedDCS" GraphicalStyleName="ISO DCS - Field">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVFhH7Y5RDoAwCEO9/6WnMzJcQ3FGRD/28WJtB2UppXyKaWaiYpNZSOfe2wQEiDWMjL7p/psgg9VnGcObQZ8GzLvDyE4ePCwXrvaaAT56irdbxRHggyjYfhV/OADDaKwON4zG6uhC0W8yD5gHzAPcA94+wupww2isji48f6Nh+1X85QDUEXi7VWAQdMTVXhow7w4jO2kgVJ9lDG8GfRogNY960/03cQxnIJ177/nnC0wzE9PMoywr4Y7Nv4T0bLEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FieldMountedDiscreteInstrument" GraphicalStyleName="ISO Instrument - Field">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVFhH7Y5RDoUgDAS9/6VRSJpoGbAopX74knkJI+zullIKBeVKUPY4fvkP0XctoCQsJZY7GpRnHoUOvEEpjBZrLO9RZt6WC3c5LCeVC728WkwuF1q5tYgc4FUuUP71EDnAu1zQPc0PXvwD/gHfHVAOziMo/3qIHlCE04hWbi2iBxQ5eUQvD2Vm1oi7HJTC2xGW9yjP5JDRISNvUBKWUMsdDcoeUkLouxZQrgTlSlCuI207GaBlNp6H988AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FieldMountedPLC" GraphicalStyleName="ISO Computer Function - Field">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVFhHxY6LqsUgDAT7/z9tGyFF4/qO7oW5nA64mSeEQAXKm0Bp+f7k3xR2owaUKTNjKaPvoEyhBqweV0beQ6lQA3aPK70dKAVqgNdxpbWHJTPA+7hS2y0FM+DUcQXt5x/MgNPHFXvn/xE/Dkeg/fyDHRDFoYjabinYAVE6R7T2sGQHCF4RvR0oBXqAsBsx8h5KhR4grEaMvoMyhR4gyNgsdqMGlDeB8iZQ3iM8L7hTXT62jBOYAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessibleDCS" GraphicalStyleName="ISO DCS - Control Room">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVFhH7Y5BEoUwCEO9/6X7fztSbIZgHSm6cPHGmBTCVkp5FNPMRMVfZiGdrbcLCBBrGJl9M/x3QQarzzKGN4M+DZh3hZmdPLhZLpztNQN8dBdvt4o9wAdRsP0q3nAAhtFYHW4YjdUxhKJX8h3gHpCFdLbeLiBYxXeAe8DqI6wON4zG6hjC4zcatl/FWw5AHYG3WwUGQUec7aUB864ws5MGQvVZxvBm0KcBUvOoN8N/F/twBtLZeo8/T2CamZhmHmX7AQG0m/GBLwxIAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessibleDiscreteInstrument" GraphicalStyleName="ISO Instrument - Control Room">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVFhH7Y5BDsMgDATz/0/TguQqMQMxDbZ7aKWpkgns7lFKSQVlJChnvH/1D9FnLaAkLCWWMxqUZ74KXbiDUlgt1ljuo6w8LRfuclhuKhdmeb3YXC6McnuROcCrXKD860vmAO9yQfcMP3jx2wOikM7W+3lQH7z4DxgOaC/OIyj/+pI9oAmnEaPcXmQPaHLziFkeysquEXc5KIWnIyz3UZ6pIatDVu6gJCyhljMalDOkhNBnLaCMBGUkKOMoxws5tzNo3RiUNAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessiblePLC" GraphicalStyleName="ISO Computer Function - Control Room">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVFhHxY4LCsAgDEN3/0u7RSj4iU5d1wzeoE+a5kopSaEyEipbng+/LdqMEVSW7ISVrO5RWSItcHrcWNmn0pAW+HrceMuhEkgLeB03ZnlcKgt4HzdGub1QFvjruMHy60FZAI9R2M18txqaR29Yfj2oC2TxU4lRbi/UBbJ0LjHL41JdAHiVeMuhEsgLgK8lVvapNOQFwGmJ1T0qS+QFAMJ2aTNGUBkJlZFQGUe6bthqK3BwW0IHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="InlineInstruments">
+      <Class name="ControlValve" GraphicalStyleName="ISO Control Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH7Y7RCgIxDATv/3+6modAXCY1gbMKRhivnYTtXmutr4LyJCjf8fzZ3wu6UwVlxu6x3WwHSqIa3i2BUmmHNvZRKj9RoItmZKCs0nkoA2WVKTAFpsAUmAL/UcAeyR7a+WymoIx4EIXS3Z3OMlBGNMju7uLXz47eM1BGsiDzjs6MzCsoIxRkzn08R8gRKCMxyM5ZsM6yPQVlxIPLgd19kpFqkHJbgU+D8iQoz7GuB9VKS1C0k8FvAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlowElement" GraphicalStyleName="ISO Flow Element General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7Y5BCsAgEMT8/6e37YJaJFdjoXsIjBF2pkXEUVCaoDRBaYLSBKUJShOUJihNZrijRe/M3hGWj13UgBpQA/454Lnd7689M2weQDnfI3xhgEXvzN734wQoTVCaoDRBaYLSBKUJShOUJig9ol2tn1VGel1aQQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FlowNozzle" GraphicalStyleName="ISO Flow Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVFhH7c5LCsNAEANR3//SE9ugfIS0SIPLGy8eOCXoybbWulWMpBhJMZJiJMVIipEUIylG0udj/6TozfPd94cN0vqU36uDtD7l9+ogrU/5vTrI0cW3Cb9Th6s8f+DvP3B08W3C79RBWp/ye3WQ1qf8Xh2k9Sm/9zNQ9Ob57vePO8RIipEUIylGUoykGEkxkmIkxchZ2wsm3EVWJ3uCywAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Orifice" GraphicalStyleName="ISO Orifice Plate 2">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVFhH7c5BCoRAEENR73/pdhAyOiFZTIHfjYsH7S+ocltrPSpGUoykGEkxkmIkxUiKkRQj6Xx8nhTdPO5+HzaQ1qd8Xx1I61O+rw6k9SnfVwfS+pTvq4O7vD/w9w+0PuX76kBan/J9dSCtT/m+OpDWp3zfz4Cim8fd68cTYiTFSIqRFCMpRlKMpBhJMZJi5KxtBzd5TU6kRnPLAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Rotameter" GraphicalStyleName="ISO Variable Area Meter">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVFhHzc7hDoMgGENR3/+lcZ8Jm2luhZlQ/XES1nbg1lp7FIZJGCZhmIRhEoZJGCZhmIRh0u/wOab0N493vwcpVln6ATN36MYWI7UnulO6sQWpTaddcfmZbmxBRps7d9iCjDZ37rCFc7WbuUM3trhSW9XzvnF0Y4t/1f9n7tCNLVZ59wek9DePd88/noBhEoZJGCZhmIRhEoZJGCZhmIRhTtt2az0rcNryp6kAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TurbineOrPropeller" GraphicalStyleName="ISO Turbine Meter">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACmSURBVFhHxc5bCgJBDETR2f+mWx1oH8UNiYh3Pg60VTGZY611KQxNGJowNGFowtCEoQlDE4am1+P+tOyb593nI4p/+ekDJjOd3FEWZDLTyR1lQSYzndxRFmQy08kdZZEe/ZbdN/L/ZUEmM53cURZkMtPJHWVBJjOd3FEWZDLTyR1lQSYzndzxUVj2zfPu+48rYGjC0IShCUMThiYMTRiaMDRh6FnHDRs8RVaGP0SwAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Venturi" GraphicalStyleName="ISO Venturi Tube">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACzSURBVFhH7Y4xDsMwDAPz/0+7VVC7CntKoCHM0uEA+Uhb3sYYj4LSCUonKJ2gdILSCUonKJ2gdPId3qOLuXPfu4ZPoIUucT9D+eG8hhRo6YzoZjRXtFMHxWPhM5pfoXfKYDpFO130jTK4i/8HWh8Ip2ini75RB8Wy8BnNr9A7GGjpjOhmNFe08xNooUvcz1B+OK8hXbqbuXPfmw9PgNIJSiconaB0gtIJSiconaB0gtLH2F4NfA2ORipGqgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="VolumeMeter" GraphicalStyleName="ISO Volume Meter">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACASURBVFhH7Y7BCsAgDMX8/592KlRFspMsHuYh+JpK25RzPgpKE5QmKE1QmqA0QWmC0gSlyQglWsTOtreHpfEV94B7wD3gPwfUeSvh40+re1gau8S8+gazD0ZYGrvM895yq3so0SJ2tr1zcQKUJihNUJqgNEFpgtIEpQlKE5QeOT1tC0dUeeUziAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipeLines">
+      <Class name="ExistingPrimary" GraphicalStyleName="Existing Primary Style" />
+      <Class name="ExistingSecondary" GraphicalStyleName="Existing Secondary Style" />
+      <Class name="Jacketed" GraphicalStyleName="Jacketed Style" />
+      <Class name="NewPrimary" GraphicalStyleName="New Primary Style" />
+      <Class name="NewSecondary" GraphicalStyleName="New Secondary Style" />
+      <Class name="Primary" GraphicalStyleName="Primary Style" />
+      <Class name="Secondary" GraphicalStyleName="Secondary Style" />
+   </BaseClass>
+   <BaseClass name="SignalLines">
+      <Class name="CapillaryTube" GraphicalStyleName="ISO Capillary Tube Style" />
+      <Class name="Electrical" GraphicalStyleName="ISO Electrical Style" />
+      <Class name="GeneralSignal" GraphicalStyleName="ISO General Signal Style" />
+      <Class name="Hydraulic" GraphicalStyleName="ISO Hydraulic Style" />
+      <Class name="Leader" GraphicalStyleName="Leader Style" />
+      <Class name="Pneumatic" GraphicalStyleName="Pneumatic Style" />
+      <Class name="Radiation" GraphicalStyleName="ISO Radiation" />
+      <Class name="Software" GraphicalStyleName="ISO Software" />
+      <Class name="Tubing" GraphicalStyleName="Tubing Style" />
+   </BaseClass>
+   <BaseClass name="Nozzles">
+      <Class name="AssumedNozzle" GraphicalStyleName="ISO Assumed Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABfSURBVFhHxcixCcBAEMCw23/pC6R9FUnjL4TBs7tXcZY4S5wlzhJnibPEWeIscZY4S5wlzhJnibPEWeL8at6c/w/OEmeJs8RZ4ixxljhLnCXOEmeJs8RZ4ixxljg7Ow8jwfOn4FXSBwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DoubleLineNozzle" GraphicalStyleName="ISO Double Line Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7c5BCsAwCETR3P/SNlnoQn4gNDLZWHhURgkzzOwpDJUwVMJQCUMlDJUwVMLwr/nNH+9cvomhQhe4KrAWFfy9nXwTQ4Uu0AW6wFWBtajg7+3kmxgqdIEucOJ5gQxDJQyVMFTCUAlDJQx1bHwIJ2sw/ZOc6wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FlangedNozzle" GraphicalStyleName="ISO Flanged Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABmSURBVFhH7c7BCoAgFAVR//+nX7bQhUwQJePmBodkjLitqo7CaMJowmjCaMJowmjC+FV/+ovvhvWbedghAzIgA34NuC92GP97sn4zDztkQAZkQAa8cXzACqMJowmjCaMJowmjp9oFyvuNDuh7USAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FrontFacingNozzle" GraphicalStyleName="ISO Front Facing Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVFhH7Y5RDoUgDAS9/6VRSJpoGbAopX74knkJI+zullIKBeVKUPY4fvkP0XctoCQsJZY7GpRnHoUOvEEpjBZrLO9RZt6WC3c5LCeVC728WkwuF1q5tYgc4FUuUP71EDnAu1zQPc0PXvwD/gHfHVAOziMo/3qIHlCE04hWbi2iBxQ5eUQvD2Vm1oi7HJTC2xGW9yjP5JDRISNvUBKWUMsdDcoeUkLouxZQrgTlSlCuI207GaBlNp6H988AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="SingleLineNozzle" GraphicalStyleName="ISO Single Lined Nozzle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVFhH7Y5BCgAgCAT9/6fNgkBiO7ZdRhhk14MTmfkVWTqRpRNZvqSmVss9OEAAAQQQQOAqMA8u9s/1twcHCCCAAAIIIPBd4ESWTmTpI2MALAuNDilbosAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="ReliefValves">
+      <Class name="AngleSafetyValve" GraphicalStyleName="ISO Safety Valve - Angle">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVFhHxZGBDsMgCET7id3/f4zrLcHg9dicVlzyVjgQrvUopWxFiplIMRMpjnK+zgJYB9cPfx8a3SezKAO8NM0ALzaWG4gWG8sM2GK+AuZxA7YYsb+CiMcM+MVGigG12Fhu4NtysNSAX+5jz3ID/mmxz5cZ8Id4gGkgxYDKDehRzeB6DSLUQKUB+wKoRz2s1yCidxDgK0AP991ynzDc7FE1NmCg1/r5XA0U3MxwPTJgoJ/P1IDhRkVPzy+kCHqHz5rQ4h9DtxsAMybuwsCw7QbA8LkmmXmT3QbAyPk2udJZ/LwepJiJFDORYh7leAMPMg/mJ+6sdgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="AngleSpringSafetyValve" GraphicalStyleName="ISO Safety Valve - Angle Spring">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADVSURBVFhH7ZFBDoMwDAR5Iv3/Y1J8WCm1xnEokdNDK01JxpBdwdFa2wrKSlBWgjLi+tnfteT5N6AcsboEyhlU5GkZlDOsCDdQRih0RbBAOWJ7AbGqCMoZthZYESxQZvwL/FyB83V+7O+AMiMqYF5oloEywwf4UD8fgTJDAXY1/CfQfAaUGQrWvrSAwoW58gL+qrXw+xEoI/qD+7W9AdvL9bMMlBH+YO37T2DO3zcCJUGH3gmKQElEYU9LoPSMQrYXMJ6UQOmxgAz/zCwoK0FZCco62vEGscBZ38/76ygAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="RuptureDiscForPressureRelief" GraphicalStyleName="ISO Rupture Disk">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB1SURBVFhH7ZABCoAgEAR9ov3/MVcKRhyraBcrwQYTNXLcYDKzrUDJBEomUEbJR7aC9wgoo7wKuJ7yotB21r33hzuYoTczugE/0z2YoTejAAUoQAEKUIACFPDfABZtZ937/PmK0Q14oIyyPWAFKJlAyQRKHpZO/yTnH3vH0wAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="SafetyValve" GraphicalStyleName="ISO Safety Valve">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVFhH3ZFRDsMgDEN7xO7+h8kWqYHMOKyomyvt44nwHAJqNzO7FSqVUKmESiVUKqFSCZVKqFRCpZJevEon9lfYH7s56Nkdb2Gs2LQKPiDPxNm9wCAdWiUewGYM+1YUl7mvsorZGfRlgHh+tgd/QQZnlEGF9w1DwP30AYH3B5j95xfw/GzPVx/gvsoqZmfQ18FkyCfiC7AZw74VR+ArNq2CvyDPxNm9SE1XwQcE7I5W3AWVSqhUQqUSKpVQqYRKJVQqoVIJlTpsewI0pUwaIKu6uwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Actuators">
+      <Class name="CylinderOrPiston" GraphicalStyleName="ISO Piston">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACCSURBVFhH7c7RCoAwDEPR/f9PT/dWxk1oReaDFY6UMEjGnPNTGJ6EoXN/64f2txkYOqqoB/SAfw1Q9rcZGDqxSN0VGDqqNN4VGDqqNN4VGDqqNN4VGDqqNN4VGDqqNN4VGDqrSNnfZmCY9bQ0wjCrB/SAHtADesAbMDwJw5MwPGeOCzIreSIDjho4AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Diaphragm" GraphicalStyleName="ISO Diaphragm Actuator">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABySURBVFhH7Y7BCsAgDMX8/5/u5kHQktE6pF7eIDtEbdPM7CooK0EZ8X79t+DvZEFJRMui8y9QeraHbtxHObO7fJB9h3Lwd/kg8x5lpz8+hZ89gzJLNDwDyiwKUIACFKAABShAAQq4HnAClJWgrARlHdYeZGmFFoSIyrYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PressureBalancedDiaphragm" GraphicalStyleName="ISO Pressure Balanced Diaphragm">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABzSURBVFhH7Y5BCoAwDAT7/09HeyiUMNEESnpZYTwMZp1hZldB2QnKiPeZr0/8zR8od6rj5e9JTiojEZl7lJMVcAK/vYNykRmIyN6i9KyxCn4jAmWWyo8iUGZRgAIUoAAFKEABClDA9YAToOwEZSco+7DxAJGeYTo7MHWqAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RotaryMotor" GraphicalStyleName="ISO Rotary Motor">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVFhH7c5RCoUwDERR97/paj4KGu6YWLX9yYPzwIs42VprS2GcCWPk+NnfhX8nC+MdNTZ6BEYlGhk5AiNRH/ddvadgJGpI9SyMhIY638/PEYyEhjrfz88RjCQ7pLqCkWQ//NsBJvr403GD8Y4aGRk3GCM25vl3sjBmvRnuMGbVAXVAHVAH1AF1wPIDvoBxJowzYZynbTvgsIkS51AnWwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Solenoid" GraphicalStyleName="ISO Solenoid Actuator">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVFhH7Y7RCoAwDAP3/z9d3cOglLREkfgS4WQ7BrkVEb8CpRIoJ+5v/yD1LQOUE92QAxwgDThUn+8sUE7koe78BCgn6tC+H7JngXKiG3KAA6QBHfUtA5Qsb0czULI4wAEOcIADvgBKJVAqgVJHrAvTy4UWpSenAQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SolenoidManualReset" GraphicalStyleName="ISO Solenoid Actuator - Manual Reset">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVFhH7dBRCsMwDATR3P/Sbv0hEMvEG8dBKdSB17pTg0SO1tqrMFbCqL5P/zil92dgVKMhe4H/WeBsUNkC+TujNgOjykP6WX/H+Q6Miob0FvS/GRjVaMheYC9QtsCI3p+B0VkdmmF0dIGVhTA6eWCcqV2B0ekDArXcHYxOHhBnaldgdHTAzECF0VkZqDA6fYGnlsDo/MQb0HYXRuf1BZ6EsRLGShjrtOMDMDRhOlwS7hYAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="SolenoidRemoteReset" GraphicalStyleName="ISO Solenoid Actuator - Remote Reset">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADCSURBVFhH7ZBBDsMwCATz/0+74bDVQhdXjiix1BxG8Q42oBxjjFuRshMfzjiD71bhw2TIs8D/LJANaluAv4xyFfhAQ+wcM86V+CCGmAOxVoEPkyHPAlstYOeroMe7lwviAuDa7J6R1ZX34Ywz+B7OiqyuvAuRlUZgteZChB/YmYFnMg9U3YVI1nDVA1V3IZI1lI2+DDfkuyiYrKn5q3z0ioJRD6qREmyxwK+XkBJs8Qeiq0ZKcPsCHUjZiZSdSNnHOF73nxeEE7fpGAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="NonEngineeringItems">
+      <Class name="Annotation" GraphicalStyleName="ISO Slope">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVFhHxc7RCoQwDAVR//+n67JwSQmDS1c7PhyIU2pzjDFehdGE0YTRhNGE0YTRhNGE0YTRhNGE0VTDZ5yl71ZDezSLxHz2pBp+PJJFop//q4bFn2aR1XtdDTd+lEWin1+pYfHilSwS/XxWQ7u0U978vjt/vAGjCaMJowmjCaMJowmjCaMJowmjCaMJo2ccJwrKhxSfqeMwAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlowArrow" GraphicalStyleName="ISO Flow Arrow">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACoSURBVFhHxc5ZCoAwEATR3P/SMf0bKsssGYWHUII9rff+K4yVMFbCOBvPePG3KIzk1REYV14cgXEn+wiMJ5lHYLyRdQTGWxlHYLSIHoHRKnIERg/vERi9PEdgjLAegXGmn1rN/1jBGGEZF4xe1nHB6OEZF4xW3nHBaBEZF4y3ouOC8UbGuGA8yRoXjDuZ44JxJXtcMJIX44Jx9mpcMFbCWAljJYx1evsAjQSq8Ew3qKkAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Gap" GraphicalStyleName="ISO Gap">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVFhH7Y5BCgAgCAT7/6ct7wMpinsxmIjpsHPMTArKSVBOgvLHO369J/9nQBmlIwJlhmoEygzyAKcSgTLLBmyANKAy7qDMIA2ojjsoo0gDOsYdlBGkAV3jDsofG7AB8gCnKwJllI4IlBmqESizVCJQToJyEpRz2Lno077cgDTllAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Connectors">
+      <Class name="InletOutletFlowArrow" GraphicalStyleName="ISO Inlet Outlet Flow Arrow">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVFhHxY5RCsUgEAN7/0tb8yERiTaurH0wvBDpTp5Syq/I8iaydKm/+qffXGTpggGnI2Tp0uQnI2Tp0oujI2TpMkojI2TpooS7I2TpMpPtjGCoMUL7fmT11sNgfrCDc5MhYQD4usuQNACsbjMkDgCz+wzJA4ByMFwYAEbP9CED5WBIHjC7z5A4YHWbIWnA112GhAHOTYYaI7TvR1ZvPbJ0mUlcOZClixLtyIEsXUbZrhzI0qUXRuRAli5NGpUDWbpAfCIHsnQ5lQNZ3kSWN5HlPcrzAqxJWUJ8cHimAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="LineBreakers">
+      <Class name="GeneralLimit" GraphicalStyleName="ISO Limit - General">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVFhH7c7bCsQgDADR/v9Pu/UhEMLkpot9sXBoO0LiM8b4FMaTMFa9z/visyqMFXO5sGcdGDOy1L5XYIzoZd53B0aPXZL9V2AkNLzaIhgtb2i3E4xaNGz1TMMosiG75xNGsbsgO58watGQ1TMNo+UN63aCkdDQaotg9Njh2X8Fxohe4n13YMzIMvtegbFiLhX2rANj1e7yCWPVvcC9wL3AvcDnF/gHjCdhPGc8Pz5hfxz7wCRBAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Pins" />
+</ProcessPower>

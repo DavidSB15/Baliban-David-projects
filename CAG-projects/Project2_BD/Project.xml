@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectName>Project2_BD</ProjectName>
+  <ProjectDescription>
+  </ProjectDescription>
+  <ProjectVersion>92</ProjectVersion>
+  <ProjectVersionMinor>1</ProjectVersionMinor>
+  <ProjectParts>
+    <ProjectPart name="PnId" fileName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\ISO_PnIdPart.xml" relativeFileName="ISO_PnIdPart.xml" uncFileName="" />
+    <ProjectPart name="Piping" fileName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\Metric_PipingPart.xml" relativeFileName="Metric_PipingPart.xml" uncFileName="" />
+    <ProjectPart name="Iso" fileName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\IsoPart.xml" relativeFileName="IsoPart.xml" uncFileName="" />
+    <ProjectPart name="Ortho" fileName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\Metric_OrthoPart.xml" relativeFileName="Metric_OrthoPart.xml" uncFileName="" />
+    <ProjectPart name="Misc" fileName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\MiscPart.xml" relativeFileName="MiscPart.xml" uncFileName="" />
+  </ProjectParts>
+  <ProjectPartDirectories>
+    <ProjectPartDirectory name="SpecSheets" directoryName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\Spec Sheets" relativeDirectoryName="Spec Sheets" uncDirectoryName="" />
+    <ProjectPartDirectory name="Ortho" directoryName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\Orthos\DWGs" relativeDirectoryName="Orthos\DWGs" uncDirectoryName="" />
+    <ProjectPartDirectory name="Related Files" directoryName="D:\Faculta\SEM II\CAG\Proiect 2_Plant\Project2_BD\Related Files" relativeDirectoryName="Related Files" uncDirectoryName="" />
+  </ProjectPartDirectories>
+</Project>
