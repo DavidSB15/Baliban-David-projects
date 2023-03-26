@@ -1,0 +1,2 @@
+SELECT * FROM De_Vanzare
+ORDER BY Pret ASC;

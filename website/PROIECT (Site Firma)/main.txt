@@ -1,0 +1,96 @@
+<html>
+
+<head>
+
+<title>
+	Technical University of Cluj-Napoca
+</title>
+
+<style>
+.center{
+	width: 30%;
+}
+</style>
+
+</head>
+
+<body><center>
+	<h1>Tehnical University of Cluj-napoca</h1>
+	<center><img src = "logo.gif"></center>
+
+	<a href = "http://www.cs.utcluj.ro">Comp Science Dep of UTCN
+	<style>
+	a:link{
+	  color: orange;
+	}
+	a:visited{
+	  color: green;
+	}
+	a:active{
+	  color: red;
+	}
+	</style>
+	</a>
+
+	<form>
+		<div class="center">
+		<table>
+
+	 <tr>
+		 <col width=50%>
+		 <td><label for = "name">Name:</label><br/><br/></td>
+		 <td><input type = "text" id="name" name="name"><br/><br/></td>
+	 </tr>
+	 <tr>
+	  <td><label for = "surname">Surname:</label><br/><br/></td>
+	  <td><input type = "text" id="surname" name="surname"><br/><br/><td>
+   </tr>
+	 <tr>
+	  <td><label for = "place of birth">Place of Birth:</label><br/><br/></td>
+	  <td><input type = "text" id="place of birth" name="place of birth"><br/><br/></td>
+   </tr>
+	 <tr>
+	  <td><label for = "address">Address:</label><br/><br/></td>
+	  <td><input type = "text" id="address" name="address"><br/><br/></td>
+	 </tr>
+	 <tr>
+	  <td><label for = "gender">Select gender (M/F):</label><br/><br/></td>
+	  <td><select name = "gender" id="gender"><br/>
+		 <option value = "male">Male</option>
+		 <option value = "female">Female</option>
+	  </td>
+	 </tr>
+
+	 <tr>
+		<td><label for = "date"> Date of birth:</label><br/><br/></td>
+    <td><input type = "date" name=	"date"><br/><br/></td>
+	</tr>
+
+	 <tr>
+	  <td><p>Select year category</p></td>
+	  <td><input type = "radio">
+	  <label for = "1-3">1-3</label><br/></td>
+	  <td><input type = "radio">
+	  <label for = "4-5">4-5</label><br/></td>
+   </tr>
+
+	 <tr>
+		 <td><p>Schoolarship status</p></td>
+		 <td><input type = "checkbox" id = "Has_Schoolarship" name = "Has_Schoolarship" value = "yes">
+		 <label for="Has_Schoolarship"> Student has schoolarship</label><br/></td>
+		 <td><input type = "checkbox" id = "No_Schoolarship" name = "No_Schoolarship" value = "no">
+		 <label for="No_Schoolarship"> Student does not have a schoolarship</label><br/></td>
+   </tr>
+
+	 <tr>
+	 <td><button type = "submit" value = "Submit">Submit</button>
+	 <button type = "clear" value = "Clear">Clear</button></td>
+   </tr>
+
+			</div>
+ 		</center>
+   </table>
+	</form>
+</body>
+
+</html>
